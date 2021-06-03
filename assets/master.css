@@ -140,7 +140,7 @@ body {
 }
 
 main {
-  max-width: 960px;
+  max-width: 60rem;
   margin: 0 auto;
 }
 
@@ -836,7 +836,7 @@ h1.motto {
   }
 
   .intro-section__contents {
-    max-width: 24rem;
+    max-width: 30rem;
     margin: 0 auto;
   }
 
@@ -1064,7 +1064,7 @@ h1.motto {
 
   .intro-section .intro-section__contents {
     display: inline-block;
-    width: 50%;
+    width: 55%;
   }
 
   .intro-section .intro-section__contents .intro-section__title,
@@ -1074,7 +1074,7 @@ h1.motto {
   }
 
   .intro-section .image-set {
-    width: 42%;
+    width: 36%;
     float: right;
     margin-top: 0;
     padding-top: 0;
