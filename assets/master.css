@@ -4,7 +4,7 @@
 :root {
   --header-height: 2.5rem;
 
-  --text-color: #33353f;
+  --text-color: #26272e;
 
   --dorkodu-smokegray-sky: #f0f3f4;
   --dorkodu-smokegray-lighter: #e2e7e9;
@@ -17,6 +17,8 @@
   --dorkodu-smokegray-dawn: #637a83;
   --dorkodu-smokegray-night: #586c74;
   --dorkodu-smokegray-black: #425157;
+
+
 
   --wanderlyf-leaf-powder: #eafbed;
   --wanderlyf-leaf-sky: #d4f7db;
@@ -93,17 +95,17 @@ div {
 p {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
-  color: #33353f;
+  color: var(--text-color);
 }
 
 a {
-  color: #33353f;
+  color: var(--text-color);
   text-decoration: none;
   font-family: "Roboto", sans-serif;
 }
 
 a:hover {
-  color: #33353f;
+  color: var(--text-color);
 }
 
 img {
@@ -115,7 +117,7 @@ h2,
 h3,
 h4 {
   font-family: "Roboto Black", "Roboto", sans-serif;
-  color: #33353f;
+  color: var(--text-color);
   font-weight: bold;
 }
 
@@ -165,7 +167,7 @@ main {
 .typical-button:hover,
 .typical-button:focus {
   background-color: var(--dorkodu-smokegray-light);
-  color: #3a3a3a;
+  color: var(--text-color);
 }
 
 .typical-button.action {
@@ -197,7 +199,7 @@ main {
 
 .typical-button.text-only:hover,
 .typical-button.text-only:focus {
-  color: #303333;
+  color: var(--text-color);
 }
 
 .typical-button.outlined {
@@ -209,7 +211,7 @@ main {
 
 .typical-button.outlined:hover,
 .typical-button.outlined:focus {
-  color: #303333;
+  color: var(--text-color);
   background-color: var(--wanderlyf-leaf-sky);
 }
 
@@ -465,7 +467,7 @@ article ul {
 }
 
 article ul li {
-  color: #303333;
+  color: var(--text-color);
   font-size: 1rem;
   padding-top: .25rem;
 }
@@ -567,7 +569,6 @@ ul.list {
   padding: 1rem;
   margin: 1rem;
   border-radius: 1rem;
-  background-color: khaki;
 }
 
 .list-grid.with-centered-items li,
