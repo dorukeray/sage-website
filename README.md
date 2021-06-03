@@ -4,7 +4,7 @@ This repository contains the source code for the [Sage’s website](https://libr
 
 A brief overview: **Sage** is a query-based data exchange protocol designed to simplify the communications for data interactions between different layers of software, and an approach for designing better APIs. 
 
-Sage provides a complete and understandable description of the data in your API, gives clients the power to want exactly what they need. The [specification](https://libre.dorkodu.com/sage/spec) is open source, and governed by [Dorkodu](https://dorkodu.com) et al. 
+Sage provides a complete and understandable description of the data in your API, gives clients the power to want exactly what they need. The [specification](https://libre.dorkodu.com/sage/spec) is open source, created and governed by [Dorkodu](https://dorkodu.com). 
 
 ## Documentation
 - [Website](https://libre.dorkodu.com/sage)
