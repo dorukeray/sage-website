@@ -769,14 +769,6 @@ h1.motto {
     font-size: 16px;
   }
 
-  main {
-    padding: 0 1rem;
-  }
-
-  aside {
-    padding: 0 1rem;
-  }
-
   .intro-section.middle-note .intro-section__contents {
     width: 100%;
   }
@@ -854,6 +846,10 @@ h1.motto {
   article.wide>p {
     width: 90%;
     margin: .5rem auto;
+  }
+
+  article {
+    padding: 1rem;
   }
 
 }
