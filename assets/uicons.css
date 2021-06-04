@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'uicons';
   src:
-    url('fonts/uicons.ttf?kelr3m') format('truetype'),
-    url('fonts/uicons.woff?kelr3m') format('woff'),
-    url('fonts/uicons.svg?kelr3m#uicons') format('svg');
+    url('/assets/fonts/uicons.ttf?kelr3m') format('truetype'),
+    url('/assets/fonts/uicons.woff?kelr3m') format('woff'),
+    url('/assets/fonts/uicons.svg?kelr3m#uicons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
