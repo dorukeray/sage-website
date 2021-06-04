@@ -1,0 +1,19 @@
+.banner {
+  padding: 1rem;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.banner p {
+  text-align: center !important;
+  font-weight: bold;
+  color: #fff;
+}
+
+.banner.--gray {
+  background-color: var(--smokegray-d2);
+}
+
+.banner.--green {
+  background-color: var(--dorkodu-d3);
+}
