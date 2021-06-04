@@ -1,0 +1,97 @@
+/* buttons [text-only, outlined, typical (default), action] */
+
+.typical-button {
+  display: inline-block;
+  padding: .5rem 1.6rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border: 0;
+  border-radius: 3rem;
+  background-color: var(--smokegray-l5);
+  color: var(--smokegray-d5);
+  cursor: pointer;
+}
+
+.typical-button:hover,
+.typical-button:focus {
+  background-color: var(--smokegray-l4);
+  color: var(--text-color);
+}
+
+.typical-button.action {
+  background-color: var(--wanderlyf-leaf);
+  color: #fff;
+}
+
+.typical-button.action:hover,
+.typical-button.action:focus {
+  background-color: var(--wanderlyf-leaf-dim);
+  color: #fff;
+}
+
+.typical-button.accent {
+  background-color: var(--wanderlyf-blue);
+  color: #fff;
+}
+
+.typical-button.accent:hover,
+.typical-button.accent:focus {
+  background-color: var(--wanderlyf-blue-darker);
+  color: #fff;
+}
+
+.typical-button.text-only {
+  background-color: unset;
+  color: var(--smokegray-d5);
+}
+
+.typical-button.text-only:hover,
+.typical-button.text-only:focus {
+  color: var(--text-color);
+}
+
+.typical-button.outlined {
+  background-color: unset;
+  padding: .4rem 1.05rem;
+  border: .2rem solid var(--wanderlyf-leaf);
+  color: var(--smokegray-d6);
+}
+
+.typical-button.outlined:hover,
+.typical-button.outlined:focus {
+  color: var(--text-color);
+  background-color: var(--wanderlyf-leaf-powder);
+}
+
+.typical-button i[class^="ui-"],
+.typical-button i[class*=" ui-"] {
+  margin-right: .5rem;
+}
+
+.button-container {
+  padding: .5rem;
+}
+
+.button-container .typical-button {
+  margin: .5rem;
+}
+
+
+.input {
+  background-color: var(--smokegray-l6);
+  margin: .5rem;
+  float: left;
+  font-size: 1.1rem;
+  margin-top: 0.05rem;
+  padding: .5rem 1rem;
+  text-align: left;
+  border: 0;
+  border-radius: .6rem;
+  font-weight: bold;
+  color: var(--smokegray-d3)
+}
+
+.input::placeholder {
+  color: var(--smokegray-l2);
+  font-weight: bold;
+}
