@@ -1,0 +1,30 @@
+/* quote */
+
+.quote {
+  display: block;
+  border-left: .4rem solid var(--smokegray-l5);
+  margin: 2rem auto;
+  max-width: 32rem;
+}
+
+.quote::before {
+  display: block;
+  content: "\e970";
+  color: var(--smokegray-l1);
+  font-size: 1.5rem;
+  font-family: "uicons";
+  margin: .2rem 1rem;
+}
+
+.quote p {
+  font-size: 1rem;
+  line-height: 1.5rem !important;
+  padding: .5rem 1rem !important;
+  font-weight: bold;
+  color: var(--smokegray-d3);
+}
+
+.quote .owner {
+  font-weight: bold;
+  color: var(--smokegray-d5);
+}
