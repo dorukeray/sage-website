@@ -1,0 +1,54 @@
+:root {
+
+  --text-color: #26272e;
+
+  --smokegray-l6: #f0f3f4;
+  --smokegray-l5: #e2e7e9;
+  --smokegray-l4: #d3dbde;
+  --smokegray-l3: #c5cfd3;
+  --smokegray-l2: #b6c3c8;
+  --smokegray-l1: #a8b7bd;
+  --smokegray:    #99abb2;
+  --smokegray-d1: #8b9fa7;
+  --smokegray-d2: #7c939c;
+  --smokegray-d3: #6e8791;
+  --smokegray-d4: #637a83;
+  --smokegray-d5: #4d5f66;
+  --smokegray-d6: #374449;
+
+  --dorkodu-l6: #e9fbeb;
+  --dorkodu-l5: #e9fbeb;
+  --dorkodu-l4: #e9fbeb;
+  --dorkodu-l3: #e9fbeb;
+  --dorkodu-l2: #e9fbeb;
+  --dorkodu-l1: #d4f7d6;
+  --dorkodu: #bef3c2;
+  --dorkodu-d1: #bef3c2;
+  --dorkodu-d2: #bef3c2;
+  --dorkodu-d3: #bef3c2;
+  --dorkodu-d4: #bef3c2;
+  --dorkodu-d5: #bef3c2;
+  --dorkodu-d6: #bef3c2;
+
+  --dorkodu-xxxd: #6ae282;
+
+  --blue-sky: #e6f1ff;
+  --blue-powder: #cce4ff;
+  --blue-lighter: #99c9ff;
+  --blue-light: #80bbff;
+  --blue-smoothie: #4da0ff;
+  --blue: #1a85ff;
+  --blue-dark: #0077ff;
+  --blue-darker: #006be6;
+  --blue-dim: #005fcc;
+  --blue-night: #004799;
+  --blue-black: #00244d;
+
+  --amour-light: #f8b9b9;
+  --amour: #ee5253;
+  --amour-dark: #d11515;
+
+  --od: #ffad33;
+  --boomerang-purple: #2952a3;
+  --tetris-blue: #0086b3;
+}
