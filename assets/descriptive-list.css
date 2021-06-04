@@ -9,33 +9,32 @@
 
 
 .descriptive-list__description {
-  font-weight: 600;
-  color: var(--smokegray-dim);
   padding: 0 !important;
   margin: .5rem 0 2rem;
+  font-size: 1.1rem !important;
 }
 
 .descriptive-list dl {
-  
+  margin-top: 1rem; 
 }
 
 .descriptive-list__badge {
   display: block !important;
-  padding: .75rem !important;
+  padding: .8rem !important;
   float: left;
   margin-right: 1rem;  
-  font-size: 1.5rem;
+  border-radius: .75rem;
+  font-size: 1.4rem;
 
   max-height: 3rem !important;
   max-width: 3rem !important;
 
-  background-color: var(--wanderlyf-);
-  border-radius: .75rem;
-  color: #fff;
+  background-color: var(--dorkodu-l3);
+  color: var(--dorkodu-d3);
 }
 
 .descriptive-list__element {
-  margin: .5rem 0;
+  margin-bottom: 2.5rem !important;
 }
 
 .descriptive-list__element > div {
@@ -43,32 +42,30 @@
 }
 
 .descriptive-list__element dt {
-  font-weight: bold;
-  font-size: 1.4rem !important;
+  font-weight: 600;
+  font-size: 1.3rem !important;
+  padding-top: .25rem;
 }
 
 .descriptive-list__element dd {
   margin-top: .5rem;
-  color: var(--smokegray-darkest);
-  font-weight: 500;
+  color: var(--smokegray-d3);
+  font-weight: 600;
+  line-height: 140%;
+  font-size: 1.1rem;
 }
 
 @media (max-width: 500px) {
   .descriptive-list__badge {
-    display: block !important;
-    padding: 1rem;
-    float: left;
-    margin-right: 1rem;  
-    max-height: 3rem;
-    max-width: 3rem;
-  
+    display: inline-block !important;
     font-size: 1.5rem;
-    background-color: var(--wanderlyf-amour);
-    border-radius: .75rem;
-    color: #fff;
+    float: none;
+    margin-right: 0;  
   }
 
   .descriptive-list__element > div {
-    width: calc(100% - 6rem);
+    width: 100% !important;
+    float: none !important;
+    margin-top: .5rem !important;
   }
 }
