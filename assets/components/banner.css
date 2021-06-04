@@ -7,13 +7,15 @@
 .banner p {
   text-align: center !important;
   font-weight: bold;
-  color: #fff;
+  color: inherit;
 }
 
 .banner.--gray {
   background-color: var(--smokegray-d2);
+  color: #fff;
 }
 
 .banner.--green {
-  background-color: var(--dorkodu-d3);
+  background-color: var(--dorkodu);
+  color: #fff;
 }
