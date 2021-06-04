@@ -1,7 +1,5 @@
 /* the Hindsight Project (C) 2021
-   written by Doruk Dorkodu */
-
-
+   written by Doruk Eray */
 
 html,
 body {
@@ -11,7 +9,6 @@ body {
 }
 
 *::selection {
-  background-color: var(--wanderlyf-leaf-smoothie);
   background-color: var(--smokegray-l1);
   color: #ffffff;
 }
@@ -94,7 +91,6 @@ body {
 }
 
 main {
-  max-width: 60rem;
   margin: 0 auto;
 }
 
@@ -279,6 +275,8 @@ main {
   font-size: 1.25rem;
   font-weight: bold;
   border-bottom: .32rem solid var(--smokegray-l5);
+  font-weight: 900;
+  color: var(--smokegray-d6)
 }
 
 .nav ul li a:hover {
@@ -717,7 +715,8 @@ ul.list {
   line-height: 120%;
   margin: .3rem 0;
   font-size: 1.2rem;
-  border-bottom: 0.3125rem solid var(--smokegray-l3);
+  color: var(--smokegray-d3);
+  font-weight: bold;
 }
 
 .footer-copyright p.statement {
@@ -772,7 +771,6 @@ h1.motto {
 
   main {
     padding: 0 1rem;
-    font-size: 1.2rem;
   }
 
   aside {
@@ -924,11 +922,6 @@ h1.motto {
     margin: 1rem auto;
   }
 
-  #content {
-    width: 85%;
-    margin: 0 auto;
-  }
-
   .header-division {
     width: calc(100% - 1rem);
     padding: 0 .5rem;
@@ -1058,12 +1051,6 @@ h1.motto {
     overflow: hidden;
     text-align: center;
     display: block;
-  }
-
-  #header,
-  #content {
-    width: 90%;
-    margin: 0 auto;
   }
 
   .intro-section.middle-note .intro-section__contents {
