@@ -1,6 +1,6 @@
 /* buttons [text-only, outlined, typical (default), action] */
 
-.typical-button {
+.button {
   display: inline-block;
   padding: .5rem 1.6rem;
   font-weight: bold;
@@ -12,59 +12,59 @@
   cursor: pointer;
 }
 
-.typical-button:hover,
-.typical-button:focus {
+.button:hover,
+.button:focus {
   background-color: var(--smokegray-l4);
   color: var(--text-color);
 }
 
-.typical-button.action {
+.button.action {
   background-color: var(--wanderlyf-leaf);
   color: #fff;
 }
 
-.typical-button.action:hover,
-.typical-button.action:focus {
+.button.action:hover,
+.button.action:focus {
   background-color: var(--wanderlyf-leaf-dim);
   color: #fff;
 }
 
-.typical-button.accent {
+.button.accent {
   background-color: var(--wanderlyf-blue);
   color: #fff;
 }
 
-.typical-button.accent:hover,
-.typical-button.accent:focus {
+.button.accent:hover,
+.button.accent:focus {
   background-color: var(--wanderlyf-blue-darker);
   color: #fff;
 }
 
-.typical-button.text-only {
+.button.text-only {
   background-color: unset;
   color: var(--smokegray-d5);
 }
 
-.typical-button.text-only:hover,
-.typical-button.text-only:focus {
+.button.text-only:hover,
+.button.text-only:focus {
   color: var(--text-color);
 }
 
-.typical-button.outlined {
+.button.outlined {
   background-color: unset;
   padding: .4rem 1.05rem;
   border: .2rem solid var(--wanderlyf-leaf);
   color: var(--smokegray-d6);
 }
 
-.typical-button.outlined:hover,
-.typical-button.outlined:focus {
+.button.outlined:hover,
+.button.outlined:focus {
   color: var(--text-color);
   background-color: var(--wanderlyf-leaf-powder);
 }
 
-.typical-button i[class^="ui-"],
-.typical-button i[class*=" ui-"] {
+.button i[class^="ui-"],
+.button i[class*=" ui-"] {
   margin-right: .5rem;
 }
 
@@ -72,10 +72,9 @@
   padding: .5rem;
 }
 
-.button-container .typical-button {
+.button-container .button {
   margin: .5rem;
 }
-
 
 .input {
   background-color: var(--smokegray-l6);
