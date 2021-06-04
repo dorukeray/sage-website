@@ -3,18 +3,18 @@
   --text-color: #26272e;
 
   --smokegray-l6: #f0f3f4;
-  --smokegray-l5: #e2e7e9;
-  --smokegray-l4: #d3dbde;
-  --smokegray-l3: #c5cfd3;
-  --smokegray-l2: #b6c3c8;
-  --smokegray-l1: #a8b7bd;
-  --smokegray:    #99abb2;
-  --smokegray-d1: #8b9fa7;
-  --smokegray-d2: #7c939c;
-  --smokegray-d3: #6e8791;
-  --smokegray-d4: #637a83;
-  --smokegray-d5: #4d5f66;
-  --smokegray-d6: #374449;
+  --smokegray-l5: #e2e6e9;
+  --smokegray-l4: #d3dade;
+  --smokegray-l3: #c5cdd3;
+  --smokegray-l2: #b6c1c8;
+  --smokegray-l1: #a8b5bd;
+  --smokegray:    #99a8b2;
+  --smokegray-d1: #8b9ca7;
+  --smokegray-d2: #7c8f9c;
+  --smokegray-d3: #6e8391;
+  --smokegray-d4: #637683;
+  --smokegray-d5: #4d5c66;
+  --smokegray-d6: #374249;
 
   --dorkodu-l6: #e9fbeb;
   --dorkodu-l5: #d4f7d6;
@@ -27,6 +27,8 @@
   --dorkodu-d2: #28d733;
   --dorkodu-d3: #2eb83e;
   --dorkodu-d4: #20ac29;
+  --dorkodu-d5: #1f7a25;
+  --dorkodu-d6: #145218;
 
   --blue-l6: #e6f2fe;
   --blue-l5: #cde6fe;
