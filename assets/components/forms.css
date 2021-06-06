@@ -3,7 +3,7 @@
 .button {
   display: inline-block;
   padding: .5rem 1.6rem;
-  font-weight: bold;
+  font-weight: 600;
   border: 0 !important;
   font-size: 1.1rem;
   line-height: 1.4rem;
@@ -11,6 +11,7 @@
   background-color: var(--smokegray-l5);
   color: var(--smokegray-d5) !important;
   cursor: pointer;
+  text-decoration: none !important;
 }
 
 .button:hover,
@@ -53,14 +54,14 @@
 .button.--outlined {
   background-color: unset;
   padding: .3rem 1.4rem;
-  border: .2rem solid var(--dorkodu-l2) !important;
+  border: .2rem solid var(--dorkodu) !important;
   color: var(--smokegray-d6) !important;
 }
 
 .button.--outlined:hover,
 .button.--outlined:focus {
   color: var(--text-color);
-  background-color: var(--dorkodu-l5) !important;
+  background-color: var(--dorkodu-l3) !important;
 }
 
 .button i[class^="ui-"],
@@ -78,19 +79,22 @@
 
 .input {
   background-color: var(--smokegray-l6);
-  margin: .5rem;
   float: left;
   font-size: 1.1rem;
   line-height: 1.4rem;
-  margin-top: 0;
   padding: .5rem 1rem;
   text-align: left;
-  font-weight: bold;
+  font-weight: 600;
   border: 0;
   border-radius: 3rem;
   color: var(--smokegray-d5)
 }
 
+.input:focus {
+  background-color: var(--smokegray-l5);
+  color: var(--smokegray-d6);
+}
+
 .input::placeholder {
-  color: var(--smokegray-l1);
+  color: var(--smokegray);
 }
