@@ -19,12 +19,11 @@
   float: left;
   color: var(--smokegray-l1);
   font-size: 2.25rem;
-  font-family: "Roboto";
-  font-weight: bold;
 }
 
 .footer-brand h2 .darker-span {
   color: var(--smokegray-d4);
+  font-family: "Rubik Medium";
 }
 
 .footer-copyright {
@@ -37,7 +36,7 @@
   margin: .3rem 0;
   font-size: 1.2rem;
   color: var(--smokegray-d3);
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .footer-copyright p.statement {
@@ -57,7 +56,7 @@
 
 .footer-nav .footer-nav-column h4 {
   display: inline-block;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 1.4rem;
   margin-bottom: .5rem;
   border-bottom: .4rem solid var(--smokegray-l3);
