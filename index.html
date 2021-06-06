@@ -38,7 +38,6 @@
 </head>
 
 <body>
-  <!-- footer -->
   <div id="page-wrapper">
     <!-- header -->
     <header id="header" class="header">
@@ -62,16 +61,19 @@
     <div id="content">
       <main class="set">
         <div class="intro-section" style="padding: 0;">
-          <div class="image-set" style="margin-top: 0; margin-bottom: 0;">
-            <img src="./images/doruk.png" alt="Pixelart Illustration of Me">
-            <p>Sage is open knowledge.</p>
-          </div>
+
           <div class="intro-section__contents">
             <h2 class="intro-section__title">Introducing Sage</h2>
             <h1 class="intro-section__tagline">Sage is a query-based data exchange protocol for APIs.</h1>
             <p class="intro-section__statement">Sage aims to simplify the communication for data interactions between
               different layers of software, and designed especially for APIs.</p>
           </div>
+
+          <div class="image-set" style="margin-left: 1rem;">
+            <img src="./images/data-exchange.svg" alt="Pixelart Illustration of Me">
+            <p>Sage is open data.</p>
+          </div>
+
         </div>
         <article>
           <h1>Hi, there 👋</h1>
@@ -79,24 +81,93 @@
           <p>My life purpose is to achieve remarkable things that will change the destiny of human civilisation. In this
             long journey, my first step is <strong>purifying and liberating the human knowledge to make it open, useful
               and meaningful for everyone.</strong> So, let's begin.</p>
+
+          <!-- quote -->
           <blockquote class="quote">
             <p>I learned this, at least, by my experiment: that if one advances confidently in the direction of his
               dreams, and endeavors to live the life which he has imagined, he will meet with a success unexpected in
               common hours.</p>
             <p class="owner">— Henry David Thoreau</p>
           </blockquote>
-          <div class="button-container">
+
+        </article>
+
+        <!-- banner -->
+        <div class="banner --green">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, unde <a href="">accusantium</a></p>
+        </div>
+
+        <!-- grid -->
+        <div class="bi-column">
+          <div class="column" style="width: 55%;">
+            <div class="descriptive-list" style="max-width: 36rem; float: right;">
+              <h2 class="descriptive-list__title">Simple Web APIs</h2>
+              <p class="descriptive-list__description">
+                Building web APIs should be simple, lightweight and efficient.
+                That’s what Framework X is all about.
+                No matter if you’re building a RESTful or JSON-based HTTP API or the next big cat rating platform, we’ve
+                got you covered.
+                Framework X doesn’t get in your way, it paves your way.
+              </p>
+              <dl>
+                <div class="descriptive-list__element">
+                  <i class="descriptive-list__badge ui-home"></i>
+                  <div>
+                    <dt>Lorem ipsum dolor sit.</dt>
+                    <dd>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat sequi quas quidem!
+                      Exercitationem, in voluptatibus.
+                    </dd>
+                  </div>
+                </div>
+
+                <div class="descriptive-list__element">
+                  <i class="descriptive-list__badge ui-password"></i>
+                  <div>
+                    <dt>Lorem ipsum dolor sit.</dt>
+                    <dd>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat sequi quas quidem!
+                      Exercitationem, in voluptatibus.
+                    </dd>
+                  </div>
+                </div>
+
+                <div class="descriptive-list__element">
+                  <i class="descriptive-list__badge ui-bank"></i>
+                  <div>
+                    <dt>Lorem ipsum dolor sit.</dt>
+                    <dd>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat sequi quas quidem!
+                      Exercitationem, in voluptatibus.
+                    </dd>
+                  </div>
+                </div>
+              </dl>
+            </div>
+          </div>
+          <div style="width: 45%;">
+            <div class="image-set" style="width: 98% !important;">
+              <img src="./images/Etyh48oWQAMiEHg.jpeg" alt="Pixelart Illustration of Me">
+              <p>Sage is open knowledge.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- form elements -->
+        <article>
+          <h2>Form Elements</h2>
+          <br>
+          <form>
             <input type="text" class="input" placeholder="Email">
             <a href="#" class="button">Hello!</a>
             <a href="#" class="button --primary">Download</a>
             <a href="#" class="button --secondary">Download</a>
             <a href="#" class="button --outlined">Download</a>
             <a href="#" class="button --textonly">Download</a>
-          </div>
+          </form>
         </article>
-        <div class="banner --green">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, unde accusantium.</p>
-        </div>
+
+        <!-- descriptive list -->
         <article>
           <div class="descriptive-list">
             <h2 class="descriptive-list__title">Simple Web APIs</h2>
@@ -109,7 +180,7 @@
             </p>
             <dl>
               <div class="descriptive-list__element">
-                <i class="descriptive-list__badge ui-arrow-left"></i>
+                <i class="descriptive-list__badge ui-home"></i>
                 <div>
                   <dt>Start in minutes</dt>
                   <dd>
@@ -121,7 +192,7 @@
               </div>
 
               <div class="descriptive-list__element">
-                <i class="descriptive-list__badge ui-arrow-left"></i>
+                <i class="descriptive-list__badge ui-password"></i>
                 <div>
                   <dt>Start in minutes</dt>
                   <dd>
@@ -133,7 +204,7 @@
               </div>
 
               <div class="descriptive-list__element">
-                <i class="descriptive-list__badge ui-arrow-left"></i>
+                <i class="descriptive-list__badge ui-bank"></i>
                 <div>
                   <dt>Start in minutes</dt>
                   <dd>
@@ -146,48 +217,13 @@
             </dl>
           </div>
         </article>
+
+        <!-- ul -->
         <article>
           <h2>In a nutshell...</h2>
           <ul>
             <li>
               <p>I am a self-taught software engineer.</p>
-            </li>
-            <li>
-              <p>I founded and lead <a href="https://dorkodu.com">Dorkodu</a> 😎.</p>
-            </li>
-            <li>
-              <p>I study at <strong>Vefa Lisesi</strong>, a historical high school in İstanbul, Türkiye.</p>
-            </li>
-            <li>
-              <p>I am concentrated on <strong>Product Engineering & Design, Computer and Information Sciences, Web
-                  3.0</strong> and <strong>AI</strong> nowadays.</p>
-            </li>
-            <li>
-              <p>I am intereseted in solving problems to save the future of our civilization, in different areas like
-                <strong>green energy, modern agriculture, water, space, AI, education, genetics, neuroscience</strong>
-                etc.</p>
-            </li>
-            <li>
-              <p>I am working on some awesome projects, <a href="/work">see my work page</a>.</p>
-            </li>
-            <li>
-              <p>I like tweeting about funny things 😄, you can <a href="https://twitter.com/thedorkodu">see me on
-                  Twitter</a>.</p>
-            </li>
-            <li>
-              <p>If you are curious, you can <a href="/about">read my story</a>.</p>
-            </li>
-            <li>
-              <p>I am inspired by other geniuses, please <a href="/thanks">see thanks page</a>.</p>
-            </li>
-          </ul>
-        </article>
-        <article>
-          <hr>
-          <h2>Let's Get in Touch 🤙</h2>
-          <ul class="contact-info-list">
-            <li>
-              <p><strong>Email : </strong><a href="mailto:doruk@dorkodu.com" target="_blank">doruk@dorkodu.com</a></p>
             </li>
           </ul>
         </article>
