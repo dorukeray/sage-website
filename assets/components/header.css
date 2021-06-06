@@ -32,17 +32,17 @@
 
 .nav ul li a {
   display: inline-block;
-  padding: .4rem .2rem .1rem;
+  padding: .4rem .3rem .1rem;
   font-size: 1.25rem;
-  font-weight: bold;
+  font-weight: 600;
   border-bottom: .32rem solid var(--smokegray-l5);
   font-weight: 900;
-  color: var(--smokegray-d6)
+  color: var(--text-color);
 }
 
 .nav ul li a:hover {
   background-color: var(--smokegray-l6);
-  border-bottom-color: var(--smokegray-l4);
+  border-bottom-color: var(--smokegray-l3);
 }
 
 @media (min-width: 200px) {
