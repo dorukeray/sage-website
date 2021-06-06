@@ -20,11 +20,11 @@
   font-size: 1rem;
   line-height: 1.5rem !important;
   padding: .5rem 1rem !important;
-  font-weight: bold;
+  font-weight: 600;
   color: var(--smokegray-d3);
 }
 
 .quote .owner {
-  font-weight: bold;
+  font-weight: 600;
   color: var(--smokegray-d5);
 }
