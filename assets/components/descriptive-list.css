@@ -1,3 +1,5 @@
+/*----------  Descriptive List  ----------*/
+
 .descriptive-list {
   padding: 1rem;
 }
@@ -14,33 +16,39 @@
 }
 
 .descriptive-list dl {
-  margin-top: 1rem; 
+  margin-top: 1rem;
 }
 
 .descriptive-list__badge {
   display: block !important;
   padding: .8rem !important;
   float: left;
-  margin-right: 1rem;  
+  margin-right: 1rem;
   border-radius: .75rem;
   font-size: 1.4rem;
 
   max-height: 3rem !important;
   max-width: 3rem !important;
 
-  background-color: var(--dorkodu-l3);
+  background-color: var(--dorkodu-l4);
   color: var(--dorkodu-d3);
+}
+
+.descriptive-list__badge.--alt {
+  background-color: var(--dorkodu);
+  color: #fff;
 }
 
 .descriptive-list__element {
   margin-bottom: 2.5rem !important;
 }
 
-.descriptive-list__element > div {
+.descriptive-list__element>div {
   width: calc(100% - 6rem);
 }
 
 .descriptive-list__element dt {
+  font-family: "Rubik Medium";
   font-weight: 600;
   font-size: 1.3rem !important;
   padding-top: .25rem;
@@ -59,10 +67,10 @@
     display: inline-block !important;
     font-size: 1.5rem;
     float: none;
-    margin-right: 0;  
+    margin-right: 0;
   }
 
-  .descriptive-list__element > div {
+  .descriptive-list__element>div {
     width: 100% !important;
     float: none !important;
     margin-top: .5rem !important;
