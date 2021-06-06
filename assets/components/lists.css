@@ -91,7 +91,7 @@
 
 .showcase-list li p {
   color: var(--smokegray-d2);
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .list-grid {
