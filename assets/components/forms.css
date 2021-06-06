@@ -4,63 +4,63 @@
   display: inline-block;
   padding: .5rem 1.6rem;
   font-weight: bold;
-  font-size: 1.2rem;
-  border: 0;
+  border: 0 !important;
+  font-size: 1.1rem;
+  line-height: 1.4rem;
   border-radius: 3rem;
   background-color: var(--smokegray-l5);
-  color: var(--smokegray-d5);
+  color: var(--smokegray-d5) !important;
   cursor: pointer;
 }
 
 .button:hover,
 .button:focus {
   background-color: var(--smokegray-l4);
-  color: var(--text-color);
+  color: var(--smokegray-d6) !important;
 }
 
-.button.action {
-  background-color: var(--wanderlyf-leaf);
-  color: #fff;
+.button.--primary {
+  background-color: var(--dorkodu) !important;
+  color: #fff !important;
 }
 
-.button.action:hover,
-.button.action:focus {
-  background-color: var(--wanderlyf-leaf-dim);
-  color: #fff;
+.button.--primary:hover,
+.button.--primary:focus {
+  background-color: var(--dorkodu-d2) !important;
 }
 
-.button.accent {
-  background-color: var(--wanderlyf-blue);
-  color: #fff;
+.button.--secondary {
+  background-color: var(--dorkodu-l4) !important;
+  color: var(--dorkodu-d4) !important;
 }
 
-.button.accent:hover,
-.button.accent:focus {
-  background-color: var(--wanderlyf-blue-darker);
-  color: #fff;
+.button.--secondary:hover,
+.button.--secondary:focus {
+  background-color: var(--dorkodu-l2) !important;
+  color: var(--dorkodu-d5) !important;
 }
 
-.button.text-only {
+.button.--textonly {
   background-color: unset;
-  color: var(--smokegray-d5);
+  color: var(--smokegray-d4) !important;
 }
 
-.button.text-only:hover,
-.button.text-only:focus {
-  color: var(--text-color);
+.button.--textonly:hover,
+.button.--textonly:focus {
+  color: var(--smokegray-d6) !important;
 }
 
-.button.outlined {
+.button.--outlined {
   background-color: unset;
-  padding: .4rem 1.05rem;
-  border: .2rem solid var(--wanderlyf-leaf);
-  color: var(--smokegray-d6);
+  padding: .3rem 1.4rem;
+  border: .2rem solid var(--dorkodu-l2) !important;
+  color: var(--smokegray-d6) !important;
 }
 
-.button.outlined:hover,
-.button.outlined:focus {
+.button.--outlined:hover,
+.button.--outlined:focus {
   color: var(--text-color);
-  background-color: var(--wanderlyf-leaf-powder);
+  background-color: var(--dorkodu-l5) !important;
 }
 
 .button i[class^="ui-"],
@@ -81,16 +81,16 @@
   margin: .5rem;
   float: left;
   font-size: 1.1rem;
-  margin-top: 0.05rem;
+  line-height: 1.4rem;
+  margin-top: 0;
   padding: .5rem 1rem;
   text-align: left;
-  border: 0;
-  border-radius: .6rem;
   font-weight: bold;
-  color: var(--smokegray-d3)
+  border: 0;
+  border-radius: 3rem;
+  color: var(--smokegray-d5)
 }
 
 .input::placeholder {
-  color: var(--smokegray-l2);
-  font-weight: bold;
+  color: var(--smokegray-l1);
 }
