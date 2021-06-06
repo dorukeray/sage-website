@@ -11,17 +11,17 @@
 
 .set h1 {
   font-size: 1.875rem;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .set h2 {
   font-size: 1.75rem;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .set h3 {
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .set h4 {
@@ -37,24 +37,24 @@
 
 .set a {
   color: var(--smokegray-d2);
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .set a:hover {
-  border-bottom: .3rem solid var(--smokegray-l5);
   color: var(--smokegray-d5);
+  text-decoration: underline;
 }
 
 
 .image-set {
   display: block;
   text-align: center !important;
-  margin: 1.5rem auto;
+  margin: 1rem auto;
 }
 
 .image-set img {
   border: 0;
-  max-height: 20rem;
+  max-height: 30rem;
 }
 
 .image-set p {
@@ -63,7 +63,7 @@
   text-align: center;
   color: var(--smokegray-l1);
   padding: 0;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 @media (min-width: 200px) {
@@ -94,8 +94,7 @@
 
   .image-set img {
     border: 0;
-    border-radius: .25rem;
-    max-height: 20rem;
+    border-radius: .3rem;
   }
 }
 
