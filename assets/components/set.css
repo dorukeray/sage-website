@@ -54,7 +54,7 @@
 
 .image-set img {
   border: 0;
-  max-height: 30rem;
+  max-height: 20rem;
 }
 
 .image-set p {
@@ -67,7 +67,6 @@
 }
 
 @media (min-width: 200px) {
-
   .image-set {
     max-width: 90%;
   }
@@ -84,7 +83,6 @@
     max-width: 100%;
     height: auto;
   }
-
 }
 
 @media (min-width: 500px) {
@@ -101,24 +99,13 @@
 @media (min-width: 760px) {
   .image-set {
     max-width: 80%;
+    padding: .5rem;
     margin: 1rem auto !important;
   }
 }
 
-
-@media (min-width: 900px) {
-  .image-set {
-    padding: .5rem;
-  }
-
-  .image-set img {
-    border: 0;
-    max-height: 20rem;
-  }
-}
-
 @media (min-width: 1000px) {
-  .set > p {
+  .set>p {
     padding: .5rem;
   }
 }
