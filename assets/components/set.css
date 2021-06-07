@@ -89,7 +89,7 @@
 
 @media (min-width: 500px) {
   .image-set {
-    max-width: 100%;
+    max-width: 95%;
   }
 
   .image-set img {
@@ -98,21 +98,10 @@
   }
 }
 
-@media (min-width: 600px) {
-  article.wide .image-set,
-  article.wide>p {
-    width: 80%;
-    margin: .5rem auto;
-  }
-}
-
 @media (min-width: 760px) {
   .image-set {
-    max-width: 70%;
-  }
-
-  .image-set.undraw {
-    max-width: 60%;
+    max-width: 80%;
+    margin: 1rem auto !important;
   }
 }
 
@@ -129,7 +118,7 @@
 }
 
 @media (min-width: 1000px) {
-  .set>p {
+  .set > p {
     padding: .5rem;
   }
 }
