@@ -13,30 +13,3 @@
     width: 50%;
   }
 }
-
-/*----------  Showcase  ----------*/
-
-.bi-column.--showcase {
-
-}
-
-.bi-column.--showcase > .column.--main {
-  display: inline-block !important;
-  margin: 0 auto !important;
-}
-
-.bi-column.--showcase > .column.--aside {
-
-}
-
-@media (min-width: 1000px) {
-  .bi-column.--showcase > .column.--main {
-    width: 60%;
-    float: left;
-  }
-
-  .bi-column.--showcase > .column.--aside {
-    width: 40%;
-    float: left;
-  }
-}
