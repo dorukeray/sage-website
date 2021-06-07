@@ -5,12 +5,14 @@
   border-left: .4rem solid var(--smokegray-l5);
   margin: 2rem auto;
   max-width: 32rem;
+  background-color: unset;
+  padding: 0;
 }
 
 .quote::before {
   display: block;
   content: "\e970";
-  color: var(--smokegray-l1);
+  color: var(--smokegray-l3);
   font-size: 1.5rem;
   font-family: "uicons";
   margin: .2rem 1rem;
@@ -21,10 +23,21 @@
   line-height: 1.5rem !important;
   padding: .5rem 1rem !important;
   font-weight: 600;
-  color: var(--smokegray-d3);
+  color: var(--smokegray-d2);
 }
 
 .quote .owner {
   font-weight: 600;
-  color: var(--smokegray-d5);
+  color: var(--smokegray-d4);
+}
+
+blockquote {
+  padding: .2rem .4rem;
+  border-left: .4rem solid var(--dorkodu-l3);
+  background-color: var(--dorkodu-l6);
+}
+
+blockquote p {
+  font-size: 1.1rem !important;
+  line-height: 1.4rem;
 }
