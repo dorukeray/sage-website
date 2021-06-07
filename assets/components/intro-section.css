@@ -2,11 +2,11 @@
 
 .intro-section {
   padding: 0 1rem 1rem;
-  max-width: 65rem;
+  max-width: 60rem;
   margin: 0 auto;
 }
 
-.intro-section__contents .typical-button {
+.intro-section__contents .button {
   float: left;
   margin: .25rem auto;
   margin-left: 0;
@@ -98,22 +98,26 @@
 }
 
 @media (min-width: 1000px) {
-  .intro-section .intro-section__contents {
-    display: inline-block;
-    width: 55%;
-  }
-
   .intro-section .intro-section__contents .intro-section__title,
   .intro-section .intro-section__contents .intro-section__statement,
   .intro-section .intro-section__contents .intro-section__tagline {
     text-align: left;
   }
 
+  .intro-section .intro-section__contents {
+    float: right;
+    width: 51%;
+    padding-right: 2rem;
+    padding-left: 0;
+  }
+
   .intro-section .image-set {
-    width: 40%;
+    width: calc(45% - 3rem);
     float: left;
     margin-top: 0;
     padding-top: 0;
+    padding-left: 2rem;
+    max-width: 22rem;
   }
 }
 
