@@ -211,6 +211,7 @@ ul.list {
 }
 
 @media (min-width: 400px) {
+
   .list-grid li,
   .showcase-list li {
     width: 80%;
@@ -218,6 +219,7 @@ ul.list {
 }
 
 @media (min-width: 500px) {
+
   .list-grid li,
   .showcase-list li {
     max-width: 60%;
@@ -269,6 +271,7 @@ ul.list {
 }
 
 @media (min-width: 1300px) {
+
   .list-grid.people-list,
   .list-grid.with-underlined-title {
     grid-template-columns: 1fr 1fr 1fr;
@@ -306,4 +309,3 @@ ul.list {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
-
