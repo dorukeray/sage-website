@@ -68,7 +68,6 @@ h4,
 h5 {
   font-family: "Rubik Medium", sans-serif !important;
   color: var(--text-color);
-  letter-spacing: -.05rem !important;
 }
 
 h1.underlined-title,
