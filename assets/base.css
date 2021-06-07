@@ -7,7 +7,7 @@ body {
 
 *::selection {
   background-color: var(--smokegray-l1);
-  color: #ffffff;
+  color: #fff;
 }
 
 * {
@@ -38,8 +38,6 @@ div {
   src: local("Rubik Medium"), url('/assets/fonts/Rubik-Medium.ttf');
 }
 
-/* Sadece HTML Elementleri */
-
 p {
   font-family: "Rubik", sans-serif;
   font-size: 1rem;
@@ -56,16 +54,21 @@ a:hover {
   color: var(--text-color);
 }
 
-img {
+img,
+video {
   border: 0;
+  max-width: 100%;
+  height: auto;
 }
 
 h1,
 h2,
 h3,
-h4 {
-  font-family: "Rubik Medium", sans-serif;
+h4,
+h5 {
+  font-family: "Rubik Medium", sans-serif !important;
   color: var(--text-color);
+  letter-spacing: -.05rem !important;
 }
 
 h1.underlined-title,
@@ -186,53 +189,3 @@ article.wide .image-set {
     margin: 0 5%;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
