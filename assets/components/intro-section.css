@@ -55,15 +55,19 @@
   margin: 2rem auto;
   float: none;
   display: block;
-  text-align: center !important;
+  text-align: left !important;
   padding: 1rem;
+}
+
+.intro-section.middle-note.--wide .intro-section__contents {
+  width: 80%;
 }
 
 .intro-section.middle-note .intro-section__title,
 .intro-section.middle-note .intro-section__tagline,
 .intro-section.middle-note .intro-section__cta,
 .intro-section.middle-note .intro-section__statement {
-  text-align: center !important;
+  text-align: left !important;
 }
 
 .intro-section.middle-note .intro-section__cta .typical-button {
@@ -72,21 +76,32 @@
 
 @media (min-width: 200px) {
   .intro-section {
-    text-align: center;
+    padding: 0 .5rem;
+    text-align: left !important;
   }
 
   .intro-section.middle-note .intro-section__contents {
-    width: 100%;
+    width: 100% !important;
+    margin: 0 auto;
+    padding: 0;
+    text-align: left !important;
+  }
+
+  .intro-section.middle-note .intro-section__title,
+  .intro-section.middle-note .intro-section__tagline,
+  .intro-section.middle-note .intro-section__cta,
+  .intro-section.middle-note .intro-section__statement {
+    text-align: left !important;
   }
 
   .intro-section .intro-section__title,
   .intro-section .intro-section__tagline,
   .intro-section .intro-section__statement {
-    text-align: left;
+    text-align: left !important;
   }
 
   .intro-section__contents {
-    max-width: 32rem;
+    max-width: 40rem;
     margin: 0 auto;
   }
   
@@ -95,6 +110,18 @@
     margin: 0 auto !important;
     float: none !important;
   }
+}
+
+@media (min-width: 600px) {
+  .intro-section.middle-note .intro-section__contents {
+    text-align: center !important;
+  }
+
+  .intro-section.middle-note .intro-section__title,
+  .intro-section.middle-note .intro-section__tagline,
+  .intro-section.middle-note .intro-section__cta,
+  .intro-section.middle-note .intro-section__statement {
+    text-align: center !important;
 }
 
 @media (min-width: 900px) {
@@ -118,8 +145,8 @@
   }
 
   .intro-section .image-set {
-    width: calc(80% - 3rem) !important;
-    float: left;
+    width: calc(48% - 5rem) !important;
+    float: left !important;
     margin-top: 0;
     padding-top: 0;
     padding-left: 2rem;
@@ -128,10 +155,6 @@
 }
 
 @media (min-width: 1200px) {
-  .intro-section.middle-note .intro-section__contents {
-    width: 75%;
-  }  
-  
   .intro-section .image-set {
     max-width: 26rem !important;
   }
