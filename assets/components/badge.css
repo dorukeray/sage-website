@@ -1,0 +1,39 @@
+.badge {
+  display: inline-block !important;
+  padding: .8rem !important;
+  border-radius: .75rem;
+  font-size: 1.4rem;
+
+  max-height: 3rem !important;
+  max-width: 3rem !important;
+
+  background-color: var(--dorkodu-l4);
+  color: var(--dorkodu-d3);
+}
+
+.badge.--alt {
+  background-color: var(--dorkodu);
+  color: #fff;
+}
+
+.badge.--blue {
+  background-color: var(--blue-l4);
+  color: var(--blue-d1);
+}
+
+.badge.--red {
+  background-color: var(--red-l4);
+  color: var(--red);
+}
+
+.badge.--golden {
+  background-color: var(--golden-l4);
+  color: var(--golden-d1);
+}
+
+.badge.--purple {
+  background-color: var(--purple-l4);
+  color: var(--purple);
+}
+
+
