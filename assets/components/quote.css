@@ -36,8 +36,6 @@
 
 blockquote {
   padding: .2rem .4rem;
-  border-left: .4rem solid var(--dorkodu-l3);
-  background-color: var(--dorkodu-l6);
 }
 
 blockquote > p {
