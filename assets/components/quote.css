@@ -18,11 +18,13 @@
   margin: .2rem 1rem;
 }
 
-.quote p {
+.quote > p {
+  display: block;
+  padding: .5rem 1rem !important;
   font-size: 1rem;
   line-height: 1.5rem !important;
-  padding: .5rem 1rem !important;
   font-weight: 600;
+  background: none;
   color: var(--smokegray-d2);
 }
 
@@ -38,7 +40,12 @@ blockquote {
   background-color: var(--dorkodu-l6);
 }
 
-blockquote p {
+blockquote > p {
+  background: top center / auto 1.5rem padding-box space no-repeat, var(--dorkodu-l5) content-box;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  color: var(--text-color);
+  display: inline;
   font-size: 1.1rem !important;
   line-height: 1.4rem;
 }
