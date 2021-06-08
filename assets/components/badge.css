@@ -18,7 +18,7 @@
 
 .badge.--blue {
   background-color: var(--blue-l4);
-  color: var(--blue-d1);
+  color: var(--blue);
 }
 
 .badge.--red {
