@@ -5,16 +5,27 @@ body {
   font-size: 16px;
 }
 
+body {
+  font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
+  color: #202020;
+  font-size: 18px;
+  line-height: 28.8px;
+  background-color: #fff;
+  -webkit-text-size-adjust: 100%
+}
+
 *::selection {
   background-color: var(--smokegray-l1);
   color: #fff;
 }
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  border: none;
   outline: 0;
-  font-family: "Rubik", sans-serif;
+  font-family: "Rubik", system-ui, -apple-system, Roboto, Helvetica Neue, Helvetica, 'Segoe UI', Arial, 'Apple Color Emoji', 'Segoe UI Emoji';
   color: var(--text-color);
 }
 
@@ -36,6 +47,14 @@ div {
   font-weight: 400;
   font-display: swap;
   src: local("Rubik Medium"), url('/assets/fonts/Rubik-Medium.ttf');
+}
+
+@font-face {
+  font-family: "Rubik Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Rubik Bold"), url('/assets/fonts/Rubik-Bold.ttf');
 }
 
 p {
@@ -61,13 +80,26 @@ video {
   height: auto;
 }
 
+code {
+  font-family: Roboto Mono, Menlo, Monaco, mononoki, monospace;
+  font-weight: 400;
+  line-height: 19.61538462px;
+  background-color: var(--smokegray-l6);
+  border-radius: .4rem;
+  padding: .25rem .25rem .125rem;
+  margin: 0 -.1rem
+}
+
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: "Rubik Medium", sans-serif !important;
+  font-family: "Rubik Bold", sans-serif !important;
   color: var(--text-color);
+  font-weight: normal !important;
+  letter-spacing: -.06rem;
+  text-rendering: optimizelegibility
 }
 
 h1.underlined-title,
@@ -91,7 +123,7 @@ ul {
 }
 
 body {
-  background-color: var(--smokegray-l6);
+  background-color: var(--smokegray-l6 );
 }
 
 main {
