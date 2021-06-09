@@ -23,7 +23,7 @@
 
 .footer-brand h2 .darker-span {
   color: var(--smokegray-d4);
-  font-family: "Rubik Medium";
+  font: inherit;
 }
 
 .footer-copyright {
