@@ -63,7 +63,8 @@
 }
 
 .description-grid > div {
-  padding: 1rem;
+  padding: .5rem 0;
+  padding-left: .5rem;
   background-color: #fff;
   max-width: 30rem;
   margin: 0 auto;
