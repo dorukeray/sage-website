@@ -19,6 +19,7 @@
   float: left;
   color: var(--smokegray-l1);
   font-size: 2.25rem;
+  line-height: 2.75rem;
 }
 
 .footer-brand h2 .darker-span {
