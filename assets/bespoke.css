@@ -1,3 +1,31 @@
+.read-next {
+  display: inline-block;
+  margin: 1rem 0;
+  margin-right: .5rem;
+  border-radius: .5rem;
+  border: .15rem solid var(--smokegray-l5);
+  padding: .7rem 1.5rem .5rem 1rem;
+}
+
+.read-next .__continue {
+  color: var(--smokegray-d2);
+  font-size: 1rem;
+}
+
+.read-next .__continue, .read-next .__title {
+  display: block;
+}
+
+.read-next .__title {
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+
+.read-next:hover,
+.read-next:focus {
+  border-color: var(--smokegray-l2);
+}
+
 /*----------  Feature Showcase  ----------*/
 
 .feature-showcase .column.--aside .image-set {
