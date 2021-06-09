@@ -1,4 +1,6 @@
-/* quote */
+/*----------  Quote  ----------*/
+
+/* Standard */
 
 .quote {
   display: block;
@@ -6,13 +8,13 @@
   margin: 2rem auto;
   max-width: 32rem;
   background-color: unset;
-  padding: 0;
+  padding: .5rem 0 0;
 }
 
 .quote::before {
   display: block;
   content: "\e970";
-  color: var(--smokegray-l3);
+  color: var(--smokegray-d1);
   font-size: 1.5rem;
   font-family: "uicons";
   margin: .2rem 1rem;
@@ -25,14 +27,34 @@
   line-height: 1.5rem !important;
   font-weight: 600;
   background: none;
-  color: var(--smokegray-d2);
+  color: var(--smokegray-d1);
+}
+
+.quote > p a {
+  color: var(--smokegray-d4);
+  text-decoration: underline;
+}
+
+.quote > p a:hover {
+  color: var(--smokegray-d6);
+  text-decoration: underline;
 }
 
 .quote .owner {
-  font-weight: 600;
+  font-weight: 900;
   font-family: "Rubik Medium";
-  color: var(--smokegray-d4);
+  color: var(--smokegray-d3);
 }
+
+.quote.--key-idea::before {
+  content: "\e9b0";
+}
+
+.quote.--info::before {
+  content: "\e9b6";
+}
+
+/*----------  Blockquote  ----------*/
 
 blockquote {
   padding: .2rem .4rem;
