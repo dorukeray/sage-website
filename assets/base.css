@@ -6,11 +6,6 @@ body {
 }
 
 body {
-  font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
-  color: #202020;
-  font-size: 18px;
-  line-height: 28.8px;
-  background-color: #fff;
   -webkit-text-size-adjust: 100%
 }
 
@@ -26,7 +21,6 @@ body {
   border: none;
   outline: 0;
   font-family: "Rubik", system-ui, -apple-system, Roboto, Helvetica Neue, Helvetica, 'Segoe UI', Arial, 'Apple Color Emoji', 'Segoe UI Emoji';
-  color: var(--text-color);
 }
 
 div {

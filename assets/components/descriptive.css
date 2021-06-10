@@ -16,8 +16,9 @@
 .descriptive-list>.__element dt {
   font-family: "Rubik Medium";
   font-weight: 600;
-  font-size: 1.3rem !important;
+  font-size: 1.15rem !important;
   padding-top: .25rem;
+  color: var(--text-color);
 }
 
 .descriptive-list>.__element dd {
@@ -25,7 +26,7 @@
   color: var(--smokegray-d3);
   font-weight: 600;
   line-height: 140%;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .descriptive-list .badge {
@@ -88,6 +89,7 @@
   margin: 1rem 0 0 !important;
   text-align: left !important;
   font-weight: bold;
+  color: var(--text-color);
   font-family: "Rubik Medium";
 }
 
@@ -95,6 +97,7 @@
   font-size: 1rem !important;
   line-height: 1.4rem !important;
   padding: .75rem 0 0 !important;
+  color: var(--text-color);
 }
 
 @media (min-width: 900px) {

@@ -52,3 +52,35 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+
+
+/*----------  Read Next  ----------*/
+
+.read-next {
+  display: inline-block;
+  margin: .5rem 0;
+  margin-right: .5rem;
+  border-radius: .6rem;
+  border: .2rem solid var(--smokegray-l5);
+  padding: .7rem 1.5rem .5rem 1rem;
+  text-align: left;
+}
+
+.read-next .__continue {
+  color: var(--smokegray-d2);
+  font-size: 1rem;
+}
+
+.read-next .__continue, .read-next .__title {
+  display: block;
+}
+
+.read-next .__title {
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+
+.read-next:hover,
+.read-next:focus {
+  border-color: var(--smokegray-l2);
+}

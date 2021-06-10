@@ -2,10 +2,11 @@
   display: inline-block !important;
   padding: .8rem !important;
   border-radius: .75rem;
-  font-size: 1.4rem;
+  font-size: 1.4rem !important;
+  line-height: 1.4rem !important;
 
-  max-height: 3rem !important;
-  max-width: 3rem !important;
+  height: 3rem !important;
+  width: 3rem !important;
 
   background-color: var(--dorkodu-l5);
   color: var(--dorkodu-d3);
