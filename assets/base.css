@@ -20,35 +20,11 @@ body {
   padding: 0;
   border: none;
   outline: 0;
-  font-family: "Rubik", system-ui, -apple-system, Roboto, Helvetica Neue, Helvetica, 'Segoe UI', Arial, 'Apple Color Emoji', 'Segoe UI Emoji';
+  font-family: "Rubik", "Roboto", system-ui, -apple-system, Helvetica Neue, Helvetica, 'Segoe UI', Arial, sans-serif;
 }
 
 div {
   overflow: hidden;
-}
-
-@font-face {
-  font-family: "Rubik";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local("Rubik Regular"), url('/assets/fonts/Rubik-Regular.ttf');
-}
-
-@font-face {
-  font-family: "Rubik Medium";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local("Rubik Medium"), url('/assets/fonts/Rubik-Medium.ttf');
-}
-
-@font-face {
-  font-family: "Rubik Bold";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local("Rubik Bold"), url('/assets/fonts/Rubik-Bold.ttf');
 }
 
 p {
@@ -89,11 +65,33 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Rubik Bold", sans-serif !important;
   color: var(--text-color);
-  font-weight: normal !important;
-  letter-spacing: -.06rem;
-  text-rendering: optimizelegibility
+  letter-spacing: -.03rem;
+  text-rendering: optimizelegibility;
+}
+
+@supports (font-stretch: 100%) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-stretch: 40% !important;
+  } 
+}
+
+h1,
+h2 {
+  font-weight: 800;
+}
+
+h3 {
+  font-weight: 700;
+}
+
+h4,
+h5 {
+  font-weight: 600;
 }
 
 h1.underlined-title,
@@ -117,7 +115,7 @@ ul {
 }
 
 body {
-  background-color: var(--smokegray-l6 );
+  background-color: var(--smokegray-l6);
 }
 
 main {
@@ -213,4 +211,8 @@ article.wide .image-set {
   #page-wrapper {
     margin: 0 5%;
   }
+}
+
+@supports (font-variation-settings: normal) {
+
 }
