@@ -15,14 +15,14 @@
   padding: 0.5rem;
 }
 
-.footer-brand h2 {
+.footer-brand .__title {
   float: left;
   color: var(--smokegray-l1);
   font-size: 2.25rem;
   line-height: 2.75rem;
 }
 
-.footer-brand h2 .darker-span {
+.footer-brand .__title .darker-span {
   color: var(--smokegray-d4);
   font: inherit;
 }
