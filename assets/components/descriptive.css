@@ -14,17 +14,16 @@
 }
 
 .descriptive-list>.__element dt {
-  font-family: "Rubik Medium";
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1.15rem !important;
   padding-top: .25rem;
   color: var(--text-color);
 }
 
 .descriptive-list>.__element dd {
-  margin-top: .5rem;
   color: var(--smokegray-d3);
   font-weight: 600;
+  padding-top: .25rem;
   line-height: 140%;
   font-size: 1rem;
 }
@@ -88,9 +87,8 @@
   padding: 0 !important;
   margin: 1rem 0 0 !important;
   text-align: left !important;
-  font-weight: bold;
+  font-weight: 700;
   color: var(--text-color);
-  font-family: "Rubik Medium";
 }
 
 .description-grid dd {
