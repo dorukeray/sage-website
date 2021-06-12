@@ -11,17 +11,14 @@
 
 .set h1 {
   font-size: 1.875rem;
-  font-weight: 600;
 }
 
 .set h2 {
   font-size: 1.75rem;
-  font-weight: 600;
 }
 
 .set h3 {
   font-size: 1.5rem;
-  font-weight: 600;
 }
 
 .set h4 {
@@ -37,7 +34,6 @@
 
 .set a {
   color: var(--smokegray-d2);
-  font-weight: 600;
 }
 
 .set a:hover {
