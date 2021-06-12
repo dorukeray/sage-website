@@ -60,15 +60,17 @@
   display: inline-block;
   margin: .5rem 0;
   margin-right: .5rem;
+  padding: .7rem 1.5rem .5rem 1rem;
   border-radius: .6rem;
   border: .2rem solid var(--smokegray-l5);
-  padding: .7rem 1.5rem .5rem 1rem;
+  min-width: 12.5rem;
   text-align: left;
 }
 
 .read-next .__continue {
   color: var(--smokegray-d2);
   font-size: 1rem;
+  font-weight: 600;
 }
 
 .read-next .__continue, .read-next .__title {
@@ -78,9 +80,10 @@
 .read-next .__title {
   font-size: 1.3rem;
   line-height: 2rem;
+  font-weight: 700;
 }
 
 .read-next:hover,
 .read-next:focus {
-  border-color: var(--smokegray-l2);
+  border-color: var(--smokegray-l3);
 }
