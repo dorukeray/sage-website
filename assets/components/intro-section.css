@@ -16,7 +16,7 @@
 .intro-section .intro-section__title {
   margin: 1rem auto .5rem;
   font-size: 2rem;
-  font-weight: bolder;
+  font-weight: 700;
   text-align: center;
   color: var(--smokegray-l3);
 }
@@ -25,7 +25,7 @@
   margin: 0 auto;
   font-size: 1.8rem;
   line-height: 2rem;
-  font-weight: 600;
+  font-weight: 800;
   text-align: center;
 }
 
@@ -34,6 +34,7 @@
   font-weight: 600;
   font-size: 1.25rem;
   margin: 0 auto;
+  line-height: 125%;
 }
 
 .intro-section .intro-section__cta {
