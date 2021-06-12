@@ -41,8 +41,7 @@
 }
 
 .quote .owner {
-  font-weight: 900;
-  font-family: "Rubik Medium";
+  font-weight: 600;
   color: var(--smokegray-d3);
 }
 
