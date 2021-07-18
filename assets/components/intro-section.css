@@ -3,7 +3,7 @@
 .intro-section {
   padding: 0 1rem 1rem;
   max-width: 60rem;
-  margin: 0 auto;
+  margin: 0 auto 2rem;
 }
 
 .intro-section__contents .button {
@@ -14,7 +14,7 @@
 }
 
 .intro-section .intro-section__title {
-  margin: 1rem auto .5rem;
+  margin: .5rem auto;
   font-size: 2rem;
   font-weight: 700;
   text-align: center;
@@ -30,7 +30,7 @@
 }
 
 .intro-section .intro-section__statement {
-  color: var(--smokegray-d3);
+  color: var(--smokegray-d2);
   font-weight: 600;
   font-size: 1.25rem;
   margin: 0 auto;
@@ -57,11 +57,11 @@
   float: none;
   display: block;
   text-align: left !important;
-  padding: 1rem;
+  padding-right: .5rem;
 }
 
 .intro-section.middle-note.--wide .intro-section__contents {
-  width: 80%;
+  width: 100%;
 }
 
 .intro-section.middle-note .intro-section__title,
@@ -82,9 +82,10 @@
   }
 
   .intro-section__contents {
-    max-width: 34rem;
+    max-width: 36rem;
     margin: 0 auto;
-    padding-left: 1rem !important;
+    padding-left: .75rem !important;
+    padding-right: .25rem !important;
   }
 
   .intro-section .image-set {

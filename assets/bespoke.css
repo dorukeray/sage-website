@@ -1,3 +1,12 @@
+.section-icon {
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  margin: 0 auto;
+  stroke: var(--smokegray-l1);
+}
+
+
 
 
 /*----------  Feature Showcase  ----------*/
@@ -7,13 +16,11 @@
 }
 
 .feature-showcase .column.--main .descriptive-list {
-  max-width: 36rem; 
+  max-width: 36rem;
   margin: 0 auto;
 }
 
-@media (max-width: 200px) {
-
-}
+@media (max-width: 200px) {}
 
 @media (min-width: 1000px) {
   .feature-showcase .column.--main .descriptive-list {
@@ -26,12 +33,12 @@
     float: left;
   }
 
-  .feature-showcase > .column.--main {
+  .feature-showcase>.column.--main {
     width: 60%;
     float: left;
   }
 
-  .feature-showcase > .column.--aside {
+  .feature-showcase>.column.--aside {
     width: 40%;
     float: left;
   }

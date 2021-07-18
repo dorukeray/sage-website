@@ -23,7 +23,7 @@
 }
 
 .footer-brand .__title .darker-span {
-  color: var(--smokegray-d4);
+  color: var(--smokegray-d3);
   font: inherit;
 }
 
@@ -84,7 +84,7 @@
   }
 }
 
-@media (min-width: 1800px) {
+@media (min-width: 900px) {
   .footer-wrapper {
     width: 80%;
     margin: 0 auto;

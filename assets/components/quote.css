@@ -8,49 +8,42 @@
   margin: 2rem auto;
   max-width: 32rem;
   background-color: unset;
-  padding: .5rem 0 0;
+  padding: 0;
 }
 
-.quote::before {
-  display: block;
-  content: "\e970";
-  color: var(--smokegray-d1);
-  font-size: 1.5rem;
-  font-family: "uicons";
-  margin: .2rem 1rem;
+.quote>h1,
+.quote>h2,
+.quote>h3,
+.quote>h4,
+.quote>h5 {
+  text-align: left !important;
+  margin: .5rem !important;
+  color: var(--smokegray-d5) !important;
 }
 
-.quote > p {
+.quote>p {
   display: block;
   padding: .5rem 1rem !important;
   font-size: 1rem;
   line-height: 1.5rem !important;
   font-weight: 600;
   background: none;
-  color: var(--smokegray-d1);
+  color: var(--smokegray-d2);
 }
 
-.quote > p a {
+.quote>p a {
   color: var(--smokegray-d4);
   text-decoration: underline;
 }
 
-.quote > p a:hover {
+.quote>p a:hover {
   color: var(--smokegray-d6);
   text-decoration: underline;
 }
 
 .quote .owner {
-  font-weight: 600;
-  color: var(--smokegray-d3);
-}
-
-.quote.--key-idea::before {
-  content: "\e9b0";
-}
-
-.quote.--info::before {
-  content: "\e9b6";
+  font-weight: 800;
+  color: var(--smokegray-d5);
 }
 
 /*----------  Blockquote  ----------*/
@@ -59,7 +52,7 @@ blockquote {
   padding: .2rem .4rem;
 }
 
-blockquote > p {
+blockquote>p {
   background: top center / auto 1.5rem padding-box space no-repeat, var(--dorkodu-l5) content-box;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;

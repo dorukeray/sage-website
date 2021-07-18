@@ -5,8 +5,8 @@
   padding: .5rem 1.6rem;
   font-weight: 600;
   border: 0 !important;
-  font-size: 1.2rem;
-  line-height: 1.4rem;
+  font-size: 1.36rem;
+  line-height: 130%;
   border-radius: 3rem;
   background-color: var(--smokegray-l5);
   color: var(--smokegray-d5) !important;
@@ -37,7 +37,7 @@
 
 .button.--secondary:hover,
 .button.--secondary:focus {
-  background-color: var(--dorkodu-l2) !important;
+  background-color: var(--dorkodu-l3) !important;
   color: var(--dorkodu-d5) !important;
 }
 

@@ -22,7 +22,11 @@
 }
 
 .set h4 {
-  font-size: 1.375rem;
+  font-size: 1.35rem;
+}
+
+.set h5 {
+  font-size: 1.15rem;
 }
 
 .set p {
@@ -32,12 +36,13 @@
   text-align: left;
 }
 
-.set a {
-  color: var(--smokegray-d2);
+.set p a {
+  color: var(--blue-d1);
+  font-weight: 600;
 }
 
-.set a:hover {
-  color: var(--smokegray-d5);
+.set p a:hover {
+  color: var(--blue-d4);
   text-decoration: underline;
 }
 

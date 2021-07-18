@@ -1,4 +1,4 @@
-* HEADER */
+/* Header */
 
 #header {
   padding: 0.64rem;
@@ -6,9 +6,9 @@
 
 #header .logo img {
   display: block;
-  width: 16rem;
+  width: 18rem;
   height: auto;
-  margin: 0 auto;
+  margin: 1rem auto;
 }
 
 /* CONTENT */
@@ -44,19 +44,24 @@
   border-bottom-color: var(--smokegray-l3);
 }
 
-@media (min-width: 200px) {
-  #header {
-    text-align: center;
-  }
+#header {
+  text-align: center;
+}
 
-  #header .header-division {
-    display: inline-block;
-  }
+#header .header-division {
+  display: inline-block;
+}
 
-  #header .logo {
-    display: block;
-    margin: 0;
-    float: none;
+#header .logo {
+  display: block;
+  margin: 0;
+  float: none;
+}
+
+
+@media (min-width: 400px) {
+  #header .logo img {
+    width: 20rem;
   }
 }
 
@@ -79,23 +84,19 @@
     width: calc(100% - 1rem);
     padding: 0 .5rem;
   }
+
+  #header .logo img {
+    width: 21rem;
+  }
 }
 
 @media (min-width: 900px) {
   #header .logo img {
-    display: block;
-    width: 18rem;
-    height: auto;
-    margin: 0 auto;
+    width: 23rem;
   }
 }
 
 @media (min-width: 1000px) {
-
-  #header .logo img {
-    width: 20rem;
-  }
-
   #header .logo a {
     display: inline !important;
     overflow: hidden !important;
@@ -133,13 +134,12 @@
   }
 
   #header .logo img {
-    width: 21rem !important;
+    width: 23rem;
   }
 }
 
 @media (min-width: 1400px) {
-  #header .logo a {
-    float: none !important;
-    margin: 0 auto !important;
+  #header .logo img {
+    width: 24rem;
   }
 }
