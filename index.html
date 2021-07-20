@@ -10,13 +10,13 @@
   <meta name="theme-color" content="#57db57">
   <meta name="author" content="Doruk Eray">
 
-  <link rel="icon" href="./images/favicon.png">
+  <link rel="icon" href="./images/sage-book.svg">
 
   <link rel="stylesheet" href="./assets.min.css">
   <link rel="stylesheet" href="./assets/components.min.css">
 
   <!-- Primary Meta Tags -->
-  <title>Sage - A query-based data exchange protocol for APIs</title>
+  <title>Sage — A query-based data exchange protocol for APIs</title>
   <meta name="title" content="Sage - A query-based data exchange protocol for APIs">
   <meta name="keywords" content="sage, sage protocol">
   <meta name="description" content="Sage is a query-based data exchange protocol for APIs.">
@@ -26,15 +26,18 @@
   <meta property="og:url" content="https://libre.dorkodu.com/sage">
   <meta property="og:title" content="Sage">
   <meta property="og:description" content="Sage is a query-based data exchange protocol for APIs.">
-  <meta property="og:image" content="./images/sage-dark.png">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary">
   <meta property="twitter:url" content="https://libre.dorkodu.com/sage">
   <meta property="twitter:title" content="Sage">
   <meta property="twitter:description" content="Sage is a query-based data exchange protocol for APIs.">
-  <meta property="twitter:image" content="./images/sage-dark.png">
 
+  <style>
+    .--lightgray {
+      color: var(--smokegray);
+    }
+  </style>
 </head>
 
 <body>
@@ -49,7 +52,7 @@
           <nav class="nav" id="nav">
             <ul>
               <li><a href="./" rel="dofollow">Home</a></li>
-              <li><a href="./walkthrough" rel="dofollow">Walkthrough</a></li>
+              <li><a href="./learn" rel="dofollow">Learn</a></li>
               <li><a href="./paper" rel="dofollow">Paper</a></li>
               <li><a href="./code" rel="dofollow">Code</a></li>
               <li><a href="./faq" rel="dofollow">FAQ</a></li>
@@ -59,6 +62,7 @@
       </div>
     </header>
     <main class="set">
+
       <div class="intro-section" style="padding: 0;">
 
         <div class="intro-section__contents">
@@ -70,23 +74,46 @@
 
         <div class="image-set" style="margin-left: 1rem;">
           <img src="./images/data-exchange.svg" alt="Illustration of a data exchange process">
-          <p>Sage is open data.</p>
+          <p>Sage is simple data exchange.</p>
         </div>
 
       </div>
+
+      <div class="button-container center" style="text-align: center;">
+        <a class="button --primary" href="/code">Get Started</a>
+        <a class="button --secondary" href="/learn">Learn More</a>
+      </div>
+
       <article>
         <h2>What is Sage?</h2>
         <p>
-          Sage is an open protocol for designing and developing better APIs, which is a specification about how
-          to query/response for data and a runtime capable of executing those queries with your existing business logic.
+          Sage is an open protocol for designing and building better APIs, simply a specification about how
+          to query/response for data and a runtime capable of executing those queries with your existing business logic
+          and data.
         </p>
         <p>
-          Sage provides a <b>simple</b> & <b>lightweight</b> but also <b>efficient, expressive</b> and <b>intuitive</b>
-          way for describing the data graph in your API, giving clients the
-          power to interact with your API exactly how they need to —performing data retrieval or action call— makes
+          Sage provides a <b>simple</b> & <b>lightweight</b> but also <b>efficient, expressive, productive</b> and
+          <b>intuitive</b>
+          way for describing the data in your API, giving clients the
+          power to interact with your API exactly how they need to—performing data retrieval or action call—makes
           evolving and documenting your APIs easier.
         </p>
         <p>We created Sage for catalyzing the <strong>Web 3.0</strong> revolution.</p>
+
+        <div class="button-container" style="text-align: center;">
+          
+          <a class="read-next" href="/faq">
+            <span class="__continue">Read More</span>
+            <h5 class="__title">FAQ</h5>
+          </a>
+
+          <a class="read-next" href="/paper">
+            <span class="__continue">Read More</span>
+            <h5 class="__title">Whitepaper</h5>
+          </a>
+
+        </div>
+
       </article>
 
       <!-- banner -->
@@ -105,33 +132,57 @@
             </p>
 
             <div class="__element">
-              <i class="badge ui-home"></i>
+              <i class="badge">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2.5" stroke="#000000"
+                  fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16l-3 -2l-2 2l-2 -2l-2 2l-2 -2l-3 2m4 -14h6m-6 4h6m-2 4h2" />
+                </svg>
+              </i>
               <div>
-                <dt>Product-centric</dt>
+                <dt><span class="--lightgray">1.</span> Define your data schema</dt>
                 <dd>
-
-                </dd>
-              </div>
-            </div>
-
-
-            <div class="__element">
-              <i class="badge ui-home"></i>
-              <div>
-                <dt>API evolution, not revolution.</dt>
-                <dd>
-
+                  Describe your data as an entity graph, then write the code which maps your data schema to your
+                  existing business logic.
                 </dd>
               </div>
             </div>
 
             <div class="__element">
-              <i class="badge ui-share"></i>
+              <i class="badge">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2.5" fill="none"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M8 8a3.5 3 0 0 1 3.5 -3h1a3.5 3 0 0 1 3.5 3a3 3 0 0 1 -2 3a3 4 0 0 0 -2 4" />
+                  <line x1="12" y1="19" x2="12" y2="19.01" />
+                </svg>
+              </i>
               <div>
-                <dt>Graph-like.</dt>
+                <dt><span class="--lightgray">2.</span> Want only what you need</dt>
                 <dd>
-
+                  Query your Sage API and get exactly what you want. Apps using Sage are performant and stable because
+                  they get predictable data.
                 </dd>
+              </div>
+            </div>
+
+            <div class="__element">
+              <i class="badge">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-replace" width="64"
+                  height="64" viewBox="0 0 24 24" stroke-width="2.5" stroke="#000000" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <rect x="3" y="3" width="6" height="6" rx="1" />
+                  <rect x="15" y="15" width="6" height="6" rx="1" />
+                  <path d="M21 11v-3a2 2 0 0 0 -2 -2h-6l3 3m0 -6l-3 3" />
+                  <path d="M3 13v3a2 2 0 0 0 2 2h6l-3 -3m0 6l3 -3" />
+                </svg>
+              </i>
+              <div>
+                <dt> <span class="--lightgray">3.</span> Consume your data</dt>
+                <dd>Use your data wisely and develop your apps more productively than you thought possible, with any
+                  frontend technology.</dd>
               </div>
             </div>
 
@@ -140,145 +191,196 @@
         </div>
         <div class="column --aside">
           <div class="image-set">
-            <img src="./images/terms-signing.svg" alt="">
-            <p>Sage is open knowledge.</p>
+            <img src="./images/data-evolution.svg" alt="">
+            <p>Sage is data evolution.</p>
           </div>
         </div>
       </div>
 
-      <!-- principles -->
-      <div class="bi-column feature-showcase">
-        <div class="column --main">
-          <dl class="descriptive-list">
-            <h2 class="__title">Using Sage is easy.</h2>
-            <p class="__description">
-              Data exchange should be simple, lightweight and efficient.
-              That’s what Sage is all about. Sage helps you building more powerful open data APIs.
-            </p>
+      <blockquote class="quote">
+        
+        <svg xmlns="http://www.w3.org/2000/svg"
+          style="display: block; width: 3rem; height: 3rem; margin: 0 .75rem .75rem; stroke: var(--smokegray-l1);"
+          viewBox="0 0 24 24" stroke-width="2.5" stroke="#2c3e50" fill="none" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <path d="M6 15h15"></path>
+          <path d="M21 19h-15"></path>
+          <path d="M15 11h6"></path>
+          <path d="M21 7h-6"></path>
+          <path d="M9 9h1a1 1 0 1 1 -1 1v-2.5a2 2 0 0 1 2 -2"></path>
+          <path d="M3 9h1a1 1 0 1 1 -1 1v-2.5a2 2 0 0 1 2 -2"></path>
+        </svg>
 
-            <div class="__element">
-              <i class="badge ui-receipt"></i>
-              <div>
-                <dt>1. Define your data schema</dt>
-                <dd>Describe your data as an entity graph, then write the code which maps your schema to your existing business logic.</dd>
-              </div>
-            </div>
+         <p>
+          Learn about Sage, how it works, and how to use it. Looking for the <a href="/paper">whitepaper</a> on how
+          Sage works, and how to implement it in your favorite language?
+        </p>
+        <p>
+          Talk is cheap, so here is the <a href="/code">code</a> to help you do that. For an in-depth
+          learning experience with practical tutorials, see our <a href="/walkthrough">walkthrough</a>.
+        </p>
+        <p class="owner">Doruk <span style="font-size: 1rem; color: var(--smokegray)"> — creator of Sage</span></p>
+      </blockquote>
 
-            <div class="__element">
-              <i class="badge ui-data-transfer"></i>
-              <div>
-                <dt>2. Consume your data</dt>
-                <dd>Use your data and build apps faster than you thought possible, with any frontend technology.</dd>
-              </div>
-            </div>
-          </dl>
-
+      <div class="intro-section middle-note --wide">
+        <div class="intro-section__contents">
+          <h2 class="intro-section__title">Values</h2>
+          <h1 class="intro-section__tagline">What you can expect?</h1>
+          <p class="intro-section__statement">
+            Sage is much more than a "yet another approach for APIs", it is the way for
+            introducing simplicity to the data exchange.
+          </p>
         </div>
-        <div class="column --aside">
-          <div class="image-set">
-            <img src="./images/terms-signing.svg" alt="">
-            <p>Sage is open knowledge.</p>
-          </div>
+      </div>
+      <div class="card-deck">
+        <div class="card">
+          <i class="badge">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2.5" fill="none"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M3 9l4 -4l4 4m-4 -4v14" />
+              <path d="M21 15l-4 4l-4 -4m4 4v-14" />
+            </svg>
+          </i>
+          <h4>
+            Query-based
+          </h4>
+          <p>
+            With Sage, you query your data by declaring what you want; then get only that.
+            <br><br>
+            Any data consumption and creation process imaginable can be implemented with Sage.
+          </p>
+        </div>
+
+        <div class="card">
+          <i class="badge">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-click" width="64" height="64"
+              viewBox="0 0 24 24" stroke-width="2.5" stroke="#000000" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <line x1="3" y1="12" x2="6" y2="12" />
+              <line x1="12" y1="3" x2="12" y2="6" />
+              <line x1="7.8" y1="7.8" x2="5.6" y2="5.6" />
+              <line x1="16.2" y1="7.8" x2="18.4" y2="5.6" />
+              <line x1="7.8" y1="16.2" x2="5.6" y2="18.4" />
+              <path d="M12 12l9 3l-4 2l-2 4l-3 -9" />
+            </svg>
+          </i>
+          <h4>
+            Product-centric
+          </h4>
+          <p>
+            Sage is primarily designed to solve data interaction problems in product engineering.
+            <br><br>
+            Sage give apps the ability to move fast without breaking things.
+          </p>
+        </div>
+
+        <div class="card">
+          <i class="badge">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-code" width="64"
+              height="64" viewBox="0 0 24 24" stroke-width="2.5" stroke="#000000" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+              <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+              <path d="M10 13l-1 2l1 2" />
+              <path d="M14 13l1 2l-1 2" />
+            </svg>
+          </i>
+          <h4>
+            With your existing business logic and data
+          </h4>
+          <p>
+            Sage creates a uniform API across your entire application by leveraging your existing data and
+            business logic with a Sage runtime.
+          </p>
+        </div>
+
+        <div class="card">
+          <i class="badge">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2.5" stroke="#000000" fill="none"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <line x1="12" y1="12" x2="12" y2="12.01" />
+              <path d="M12 2a4 10 0 0 0 -4 10a4 10 0 0 0 4 10a4 10 0 0 0 4 -10a4 10 0 0 0 -4 -10"
+                transform="rotate(45 12 12)" />
+              <path d="M12 2a4 10 0 0 0 -4 10a4 10 0 0 0 4 10a4 10 0 0 0 4 -10a4 10 0 0 0 -4 -10"
+                transform="rotate(-45 12 12)" />
+            </svg>
+          </i>
+          <h4>
+            API evolution, not revolution.
+          </h4>
+          <p>
+            Change your data schema without impacting existing queries and documentation.
+            <br><br>
+            With Sage, your schema is your contract — so you always get correct documentation.
+          </p>
+        </div>
+
+        <div class="card">
+          <i class="badge">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-world" width="64" height="64"
+              viewBox="0 0 24 24" stroke-width="2.5" stroke="#000000" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <circle cx="12" cy="12" r="9" />
+              <line x1="3.6" y1="9" x2="20.4" y2="9" />
+              <line x1="3.6" y1="15" x2="20.4" y2="15" />
+              <path d="M11.5 3a17 17 0 0 0 0 18" />
+              <path d="M12.5 3a17 17 0 0 1 0 18" />
+            </svg>
+          </i>
+          <h4>
+            Environment Agnostic
+          </h4>
+          <p>
+            Sage never dictates the use of any programming language, backend, storage technique or even a query language
+            like GraphQL.
+            <br><br>
+            Instead, Sage focuses on concepts and patterns that are achievable no matter how you're
+            building a service.
+          </p>
+        </div>
+
+        <div class="card">
+          <i class="badge">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-vector-triangle" width="64"
+              height="64" viewBox="0 0 24 24" stroke-width="2.5" stroke="#000000" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <rect x="10" y="4" width="4" height="4" rx="1" />
+              <rect x="3" y="17" width="4" height="4" rx="1" />
+              <rect x="17" y="17" width="4" height="4" rx="1" />
+              <line x1="6.5" y1="17.1" x2="11.5" y2="8" />
+              <line x1="17.5" y1="17.1" x2="12.5" y2="8" />
+              <line x1="7" y1="19" x2="17" y2="19" />
+            </svg>
+          </i>
+          <h4>
+            Graph-like
+          </h4>
+          <p>
+            Sage achieves harmony with the structure of today's modern data-driven apps.
+            <br><br>
+            To do this, Sage guides you through the creation, consumption and evolution of your data as a
+            universal entity graph.
+          </p>
         </div>
       </div>
 
-      <!-- form elements -->
-      <article>
-        <blockquote class="quote --info">
-          <p>Learn about Sage, how it works, and how to use it. Looking for the <a href="/paper">whitepaper</a> on how
-            Sage works, and how to implement it in your favorite language?</p>
-          <p>Talk is cheap, so here is the <a href="/code">code</a> to help you do that. For an in-depth
-            learning experience with practical tutorials, see our <a href="/walkthrough">walkthrough</a>.</p>
-          <p class="owner">— Doruk, creator of Sage</p>
-        </blockquote>
-      </article>
-
-      <section>
-        <div class="intro-section middle-note --wide">
-          <div class="intro-section__contents">
-            <h2 class="intro-section__title">Our Purpose</h2>
-            <h1 class="intro-section__tagline">Purify the human knowledge, make it open, useful and meaningful for
-              everyone.</h1>
-            <p class="intro-section__statement">Human and Knowledge. We know what the combination of these two can do.
-              Therefore, we preserve the universal accumilation of knowledge, feelings and thoughts of humanity.</p>
-          </div>
-        </div>
-        <div class="card-deck">
-          <div class="card">
-            <i class="badge ui-bank"></i>
-            <h4>Lorem, ipsum dolor.</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quae velit omnis consequuntur
-              voluptatem corrupti nisi quod fuga neque inventore!</p>
-          </div>
-        </div>
-      </section>
-
-      <section>
-
-        <div class="intro-section middle-note --wide">
-          <div class="intro-section__contents">
-            <h2 class="intro-section__title">Our Purpose</h2>
-            <h1 class="intro-section__tagline">Purify the human knowledge, make it open, useful and meaningful for
-              everyone.</h1>
-            <p class="intro-section__statement">Human and Knowledge. We know what the combination of these two can do.
-              Therefore, we preserve the universal accumilation of knowledge, feelings and thoughts of humanity.</p>
-          </div>
-        </div>
-
-        <dl class="description-grid">
-          <div>
-            <dt>Lorem, ipsum dolor.</dt>
-            <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quae velit omnis consequuntur
-              voluptatem corrupti nisi quod fuga neque inventore!</dd>
-          </div>
-          <div>
-            <dt>Lorem, ipsum dolor.</dt>
-            <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quae velit omnis consequuntur
-              voluptatem corrupti nisi quod fuga neque inventore!</dd>
-          </div>
-          <div>
-            <dt>Lorem, ipsum dolor.</dt>
-            <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quae velit omnis consequuntur
-              voluptatem corrupti nisi quod fuga neque inventore!</dd>
-          </div>
-          <div>
-            <dt>Lorem, ipsum dolor.</dt>
-            <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quae velit omnis consequuntur
-              voluptatem corrupti nisi quod fuga neque inventore!</dd>
-          </div>
-          <div>
-            <dt>Lorem, ipsum dolor.</dt>
-            <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quae velit omnis consequuntur
-              voluptatem corrupti nisi quod fuga neque inventore!</dd>
-          </div>
-          <div>
-            <dt>Lorem, ipsum dolor.</dt>
-            <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quae velit omnis consequuntur
-              voluptatem corrupti nisi quod fuga neque inventore!</dd>
-          </div>
-        </dl>
-
-      </section>
-
-      <!-- ul -->
       <article>
         <h2>In a nutshell...</h2>
-        <ul>
-          <li>
-            <p>I am a self-taught software engineer.</p>
-          </li>
-        </ul>
-        <blockquote>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem optio natus, praesentium delectus ab quam
-            eligendi maiores saepe officiis ipsam.</p>
-          <p>Lorem ipsum dolor sit amet.</p>
-        </blockquote>
-
-        <a class="read-next" href="#">
-          <span class="__continue">Continue Reading</span>
-          <h5 class="__title">Queries and Mutations</h5>
-        </a>
-
+        <p>
+          But that’s not all! We are currently working on the documentation with all the details to give you a deep
+          understanding of how everything works and how to build most common use-cases.
+        </p>
+        <div class="button-container center" style="text-align: center;">
+          <a class="button --primary" href="/learn">Learn Sage</a>
+          <a class="button --secondary" href="/best-practices">Best Practices</a>
+        </div>
       </article>
 
     </main>
@@ -286,14 +388,14 @@
     <footer class="footer" id="footer">
       <div class="footer-wrapper">
         <div class="footer-brand">
-          <h2>the <span class="darker-span">Sage</span> Protocol</h2>
+          <h2 class="__title">the <span class="darker-span">Sage</span> Protocol</h2>
         </div>
         <div class="footer-nav">
           <div class="footer-nav-column">
             <h4>Learn</h4>
             <ul>
               <li><a href="/">Home</a></li>
-              <li><a href="/walkthrough">Walkthrough</a></li>
+              <li><a href="/learn">Learn</a></li>
               <li><a href="/best-practices">Best Practices</a></li>
               <li><a href="/faq">FAQ</a></li>
             </ul>
