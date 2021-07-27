@@ -24,6 +24,7 @@
 
 .card-deck.--showcase>.card {
   position: relative;
+  padding-bottom: 4rem !important;
 }
 
 .card p {
@@ -34,7 +35,6 @@
 
 .card-deck.--showcase>.card>p {
   position: relative;
-  padding: 0 0 3rem !important;
 }
 
 .card>p.__tag {

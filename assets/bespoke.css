@@ -6,8 +6,17 @@
   stroke: var(--smokegray-l1);
 }
 
+.image-set.--undraw>img {
+  padding: 0 1rem;
+}
 
+.--lightgray {
+  color: var(--smokegray);
+}
 
+.header .logo {
+  margin-bottom: 1rem !important;
+}
 
 /*----------  Feature Showcase  ----------*/
 
