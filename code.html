@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, max-scale=1">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="theme-color" content="#57db57">
+  <meta name="author" content="Doruk Eray">
+
+  <link rel="icon" href="/images/sage-book.svg">
+
+  <link rel="stylesheet" href="/assets.min.css">
+  <link rel="stylesheet" href="/assets/components.min.css">
+
+  <!-- Primary Meta Tags -->
+  <title>Code — Sage</title>
+  <meta name="title" content="Code - Sage">
+  <meta name="keywords" content="sage code, use sage, sage protocol code, sage code">
+  <meta name="description" content="Sage Code Libraries, Tools and the Community Work.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://libre.dorkodu.com/sage/code">
+  <meta property="og:title" content="Code - Sage">
+  <meta property="og:description" content="Sage Code Libraries, Tools and the Community Work.">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary">
+  <meta property="twitter:url" content="https://libre.dorkodu.com/sage/code">
+  <meta property="twitter:title" content="Code - Sage">
+  <meta property="twitter:description" content="Sage Code Libraries, Tools and the Community Work.">
+
+
+  <style>
+    .card-deck.--monocolumn {
+      grid-template-columns: 1fr !important;
+    }
+
+    .card-deck.--monocolumn>.card {
+      grid-template-columns: 1fr !important;
+      max-width: 40rem !important;
+    }
+
+    .card-deck.--monocolumn>.card>h4 {
+      font-size: 1.5rem !important;
+      padding: .4rem 0 !important;
+    }
+
+    h3.library-category {
+      color: var(--smokegray);
+    }
+  </style>
+</head>
+
+<body>
+  <div id="page-wrapper">
+    <!-- header -->
+    <header id="header" class="header">
+      <div class="header-division">
+        <div class="logo">
+          <img src="/images/sage-dark.png" alt="Sage Logo">
+        </div>
+        <div class="nav-container">
+          <nav class="nav" id="nav">
+            <ul>
+              <li><a href="./" rel="dofollow">Home</a></li>
+              <li><a href="./learn" rel="dofollow">Learn</a></li>
+              <li><a href="./paper" rel="dofollow">Paper</a></li>
+              <li><a href="./code" rel="dofollow">Code</a></li>
+              <li><a href="./faq" rel="dofollow">FAQ</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="set">
+
+      <div class="intro-section" style="padding: 0;">
+
+        <div class="intro-section__contents">
+          <h2 class="intro-section__title">Code</h2>
+          <h1 class="intro-section__tagline">Code using Sage.</h1>
+          <p class="intro-section__statement">
+            Because Sage is an approach for data interactions; there are libraries, tools and other resources to help
+            you get started working with Sage.
+          </p>
+        </div>
+        <div class="image-set --undraw" style="margin-left: 1rem;">
+          <img src="/images/sage-with-code.svg">
+        </div>
+      </div>
+
+      </article>
+      <article>
+        <h2>Reference Implementations</h2>
+        <h3 class="library-category">Server</h3>
+
+        <div class="card-deck --monocolumn" style="padding: 0 !important;">
+
+          <div class="card">
+            <p class="__tag">PHP</p>
+            <h4>Sage.php</h4>
+            <ul style="margin-top: 0; padding-top: 0;">
+              <li>
+                <p>
+                  <b style="color: var(--smokegray-d2)">GitHub: </b>
+                  <a href="https://github.com/dorkodu/sage.php" target="_blank">dorkodu/sage.php</a>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <b style="color: var(--smokegray-d2)">Status: </b>
+                  <span>Work In Progress</span>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <b style="color: var(--smokegray-d2)">License: </b>
+                  <span>MIT</span>
+                </p>
+              </li>
+            </ul>
+            <p>
+              The reference implementation of the Sage protocol, in PHP.
+              <br><br>
+              This library is a thin middleware on top of your existing data and business logic.
+              It provides the utility for creating an awesome Sage API for your app.
+            </p>
+            <ul>
+              <li>A <b>Type System</b> to express your app’s data.</li>
+              <li><b>Validation</b> and <b>Introspection</b> of this Type System</li>
+              <li>Parsing, validating and <b>executing Sage queries</b> against this Type System</li>
+              <li>Rich <b>error reporting</b>, including query validation and execution errors</li>
+            </ul>
+
+          </div>
+
+        </div>
+
+        <h3 class="library-category">Client</h3>
+
+        <div class="card-deck --monocolumn" style="padding: 0 !important;">
+
+          <div class="card">
+            <p class="__tag">JavaScript</p>
+            <h4>Sage.js</h4>
+            <ul style="margin-top: 0; padding-top: 0;">
+              <li>
+                <p>
+                  <b style="color: var(--smokegray-d2)">GitHub: </b>
+                  <a href="https://github.com/dorkodu/sage.js" target="_blank">dorkodu/sage.js</a>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <b style="color: var(--smokegray-d2)">Status: </b>
+                  <span>Work In Progress</span>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <b style="color: var(--smokegray-d2)">License: </b>
+                  <span>MIT</span>
+                </p>
+              </li>
+            </ul>
+            <p>Sage.js is the simple, lightweight and awesome Sage client for JS.</p>
+            <br>
+            <p>
+              Sage.js enables you to manage your both local & remote data, and structure your code in an economical,
+              predictable, and effective way.
+            </p>
+            <ul>
+              <li><b>Declarative &amp; efficient data exchange</b> with Sage.</li>
+              <li><b>Manage</b> your app's <b>data requirements</b>.</li>
+              <li>Universally compatible.</li>
+              <li><b>Isomorphic</b>.</li>
+              <li><b>No dependencies</b>, just vanilla JavaScript.</li>
+            </ul>
+          </div>
+
+        </div>
+      </article>
+
+    </main>
+    <!-- footer -->
+    <footer class="footer" id="footer">
+      <div class="footer-wrapper">
+        <div class="footer-brand">
+          <h2 class="__title">the <span class="darker-span">Sage</span> Protocol</h2>
+        </div>
+        <div class="footer-nav">
+          <div class="footer-nav-column">
+            <h4>Learn</h4>
+            <ul>
+              <li><a href="./">Home</a></li>
+              <li><a href="./learn">Learn</a></li>
+              <li><a href="./best-practices">Best Practices</a></li>
+              <li><a href="./faq">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav-column">
+            <h4>Protocol</h4>
+            <ul>
+              <li><a href="./paper">Whitepaper</a></li>
+              <li><a href="./code">Code</a></li>
+              <li><a href="https://github.com/dorkodu/sage">GitHub</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <p class="statement">&copy; 2021 Dorkodu</p>
+        </div>
+      </div>
+    </footer>
+</body>
+
+</html>
