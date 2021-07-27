@@ -8,10 +8,7 @@ Sage provides a complete and understandable description of the data in your API,
 
 ## Documentation
 
-- #### [Website](https://libre.dorkodu.com/sage)
-
-- #### [Reference Documentation & Learning Material](https://libre.dorkodu.com/sage/learn)
-
-- #### [Libraries, Tools and Community Work](https://libre.dorkodu.com/sage/code)
-
-- #### [Frequently Asked Questions (FAQ)](https://libre.dorkodu.com/sage/faq)
+- [Website](https://libre.dorkodu.com/sage)
+- [Reference Documentation & Learning Material](https://libre.dorkodu.com/sage/learn)
+- [Libraries, Tools and Community Work](https://libre.dorkodu.com/sage/code)
+- [Frequently Asked Questions (FAQ)](https://libre.dorkodu.com/sage/faq)
