@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, max-scale=1">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="theme-color" content="#57db57">
+  <meta name="author" content="Doruk Eray">
+
+  <link rel="icon" href="/images/sage-book.svg">
+
+  <link rel="stylesheet" href="/assets.min.css">
+  <link rel="stylesheet" href="/assets/components.min.css">
+
+  <link rel="stylesheet" href="./prism.min.css">
+
+  <!-- Primary Meta Tags -->
+  <title>Learn — Sage</title>
+  <meta name="title" content="Learn - Sage">
+  <meta name="keywords" content="sage learn, learn sage, sage docs, sage documentation, sage walkthrough">
+  <meta name="description" content="Learn about Sage, how it works, and how to use it.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://libre.dorkodu.com/sage/learn">
+  <meta property="og:title" content="Learn - Sage">
+  <meta property="og:description" content="Learn about Sage, how it works, and how to use it.">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary">
+  <meta property="twitter:url" content="https://libre.dorkodu.com/sage/learn">
+  <meta property="twitter:title" content="Learn - Sage">
+  <meta property="twitter:description" content="Learn about Sage, how it works, and how to use it.">
+
+  <style>
+    pre {
+      margin: 1rem .5rem !important;
+    }
+
+    @media (min-width: 720px) {
+      .link-list.--toc {
+        width: 70%;
+        margin-right: auto !important;
+        margin-left: auto !important;
+      }
+
+    }
+
+    .link-list.--toc {
+      list-style: none !important;
+      text-align: center;
+    }
+
+    .link-list.--toc>li {
+      margin: .2rem !important;
+      list-style: none !important;
+    }
+
+    .link-list.--toc>li>a {
+      color: var(--blue-d1);
+      font-size: 1.1rem;
+    }
+
+    .link-list.--toc>li>a:hover {
+      color: var(--blue-d4);
+    }
+
+    .title-anchor {
+      display: inline-block;
+      margin-left: -1rem;
+    }
+
+    .title-anchor>svg {
+      width: 2rem;
+      height: 2rem;
+      stroke: var(--smokegray-l1);
+      margin-bottom: -.25rem;
+    }
+
+    .title-anchor:hover>svg {
+      stroke: var(--smokegray-d3);
+    }
+  </style>
+
+</head>
+
+<body>
+  <div id="page-wrapper">
+    <!-- header -->
+    <header id="header" class="header">
+      <div class="header-division">
+        <div class="logo">
+          <img src="/images/sage-dark.png" alt="Sage Logo">
+        </div>
+        <div class="nav-container">
+          <nav class="nav" id="nav">
+            <ul>
+              <li><a href="./" rel="dofollow">Home</a></li>
+              <li><a href="./learn" rel="dofollow">Learn</a></li>
+              <li><a href="./paper" rel="dofollow">Paper</a></li>
+              <li><a href="./code" rel="dofollow">Code</a></li>
+              <li><a href="./faq" rel="dofollow">FAQ</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="set">
+
+      <div class="intro-section" style="padding: 0;">
+        <div class="intro-section__contents">
+          <h2 class="intro-section__title">Learn</h2>
+          <h1 class="intro-section__tagline">The Sage Walkthrough.</h1>
+          <p class="intro-section__statement">
+            Learn about the Sage protocol; how it works, and how to use it.
+            Get tips & tricks about how to build an awesome Sage API and take it to production.
+          </p>
+        </div>
+        <div class="image-set --undraw">
+          <img src="/images/undraw_Personal_notebook_re_d7dc.svg">
+        </div>
+      </div>
+
+      <article>
+        <hr>
+        <ul class="link-list --toc">
+          <h3>Index</h3>
+          <li><a href="#introduction">Introduction</a></li>
+          <li><a href="#queries">Queries</a></li>
+          <li><a href="#schemas-and-types">Schemas and Types</a></li>
+          <li><a href="#validation">Validation</a></li>
+          <li><a href="#execution">Execution</a></li>
+          <li><a href="#introspection">Introspection</a></li>
+        </ul>
+        <hr>
+      </article>
+      <article id="introduction">
+        <h2>
+          <a href="#introduction" class="title-anchor">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2.5" fill="none"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+              <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+            </svg>
+          </a>
+          Introduction to Sage
+        </h2>
+
+        <p>
+          Sage is an open protocol for query-based data exchange, and a server-side runtime for
+          executing those queries using the data schema you define. Sage isn't tied to any specific storage
+          and is instead backed by your existing data and business logic.
+        </p>
+        <p>
+          A Sage service is created by defining your data schema as entities (with their attributes, acts
+          and links) then writing the code which maps your schema to your existing business logic. You describe and
+          consume data with high awareness using Sage, as how it is in the real world.
+        </p>
+
+        <h3>Let’s hit the road!</h3>
+        <p>
+          For example, let’s assume that you want to build a Sage service which gives you information about people.
+          You need to define your schema first.
+        </p>
+
+        <blockquote class="quote">
+          <p>
+            We use a <u><strong>hypothetical, pseudo language</strong></u> for type definitions in our
+            examples to be language-agnostic, but you will write real code to define your schema.
+          </p>
+        </blockquote>
+
+
+        <pre><code class='language-css' lang='css'>
+          entity Person {
+            id: @attribute;
+            name: @attribute(string);
+          }
+        </code></pre>
+
+        <p>Along with functions for each attribute:</p>
+
+        <pre><code class='language-php' lang='php'>
+          function Person($query) {
+            $id = $query-&gt;argument(&#39;id&#39;);
+        
+            return [
+              &#39;id&#39; =&gt; $id,
+            ];
+          }
+        
+          function Person_id($referenceValue) {
+            return $referenceValue[&#39;id&#39;];
+          }
+        
+          function Person_name($referenceValue) {
+            $person = DataSource::getPersonById($id);
+            return $person-&gt;id;
+          }
+        </code></pre>
+
+        <blockquote class="quote">
+          <p>
+            We will use <u><strong>PHP</strong></u> in our real code examples, and <u><strong>JSON</strong></u> as our
+            query/response formats. Because they are widely used in the web community.
+          </p>
+          <p>
+            But you can use Sage with any language that has an implementation or any format that complies with the Sage
+            specification.
+          </p>
+        </blockquote>
+
+        <p>
+          After a Sage service is running (typically at a URL on a web service), it can receive requests with queries to
+          validate and execute. The service first checks a query to ensure it only refers to the types and artifacts
+          defined, and then runs the provided code to produce a result.
+        </p>
+
+        <p>For example, the query:</p>
+
+        <pre><code class='language-json' lang='json'>
+          {
+            &quot;doruk&quot;: {
+              &quot;typ&quot;: &quot;Person&quot;,
+              &quot;atr&quot;: [&quot;name&quot;],
+              &quot;arg&quot;: {
+                &quot;id&quot;: 5
+              }
+            }
+          }
+        </code></pre>
+
+        <p>Could produce the following result:</p>
+
+
+        <pre>
+          <code class="language-json">
+            {
+              &quot;data&quot;: {
+                &quot;doruk&quot;: {
+                  &quot;name&quot;: &quot;Doruk Eray&quot;
+                }
+              }
+            }
+          </code>
+        </pre>
+      </article>
+
+      <article id="queries">
+        <h2>
+          <a href="#queries" class="title-anchor">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2.5" fill="none"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+              <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+            </svg>
+          </a>
+          Queries
+        </h2>
+        <p>— Work in progress.</p>
+
+        <!--
+        <p>In this section, you'll learn in detail about how to query a Sage server.</p>
+
+        <h3></h3>
+        <p>
+          At its simplest, Sage is about asking for specific fields on objects. Let's start by looking at a very
+          simple query and the result we get when we run it:
+        </p>
+
+        <pre><code class='language-json' lang='json'>
+          {
+            &quot;neo&quot;: {
+              &quot;typ&quot;: &quot;Hero&quot;,
+              &quot;atr&quot;: [&quot;name&quot;]
+            }
+          }
+        </code></pre>
+
+        <pre>
+          <code class="language-json">
+            {
+              &quot;data&quot;: {
+                &quot;neo&quot;: {
+                  &quot;name&quot;: &quot;Neo&quot;
+                }
+              }
+            }
+          </code>
+        </pre>
+
+        <p>
+          You can see clearly that the query determines the result. This is essential to Sage,
+          because you always want to get back what you expect, and the server knows exactly what the client
+          is asking for.
+        </p>
+        <p>
+          The attribute <code>name</code> returns a <code>String</code> type, in this case the name of the main hero of
+          The Matrix, "Neo".
+        </p>
+        <p>
+          In the previous example, we just asked for the name of our hero which returned a <code>String</code>, a Scalar
+          type. But attributes can also refer to other types, such as List or Object. In that case, you can make a
+          sub-selection of fields for that object. GraphQL queries can traverse related objects and their fields, letting clients fetch
+          lots of related data in one request, instead of making several roundtrips as one would need in a classic REST architecture.
+        </p>
+        
+          <h3>Anatomy of a Sage Query</h3>
+          <p>typ:</p>
+        -->
+      </article>
+
+      <article id="schemas-and-types">
+        <h2>
+          <a href="#schemas-and-types" class="title-anchor">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2.5" fill="none"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+              <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+            </svg>
+          </a>
+          Schemas and Types
+        </h2>
+        <p>— Work in progress.</p>
+      </article>
+
+      <article id="validation">
+        <h2>
+          <a href="#validation" class="title-anchor">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2.5" fill="none"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+              <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+            </svg>
+          </a>
+          Validation
+        </h2>
+        <p>— Work in progress.</p>
+      </article>
+
+      <article id="execution">
+        <h2>
+          <a href="#execution" class="title-anchor">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2.5" fill="none"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+              <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+            </svg>
+          </a>
+          Execution
+        </h2>
+        <p>— Work in progress.</p>
+      </article>
+
+      <article id="introspection">
+        <h2>
+          <a href="#introspection" class="title-anchor">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2.5" fill="none"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+              <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+            </svg>
+          </a>
+          Introspection
+        </h2>
+        <p>— Work in progress.</p>
+      </article>
+
+      <article>
+        <h2>In a nutshell...</h2>
+        <p>
+          This was a beginner-friendly walkthrough on the main building blocks of Sage and some of the concepts &
+          features it introduces.
+          <br><br>
+          If you want to learn more, you can also check out <b>Best Practices</b> for in-depth advices about how to
+          build an awesome Sage API and take it to production.
+        </p>
+
+        <div class="button-container" style="text-align: center;">
+          <a class="read-next" href="./paper">
+            <span class="__continue">Read Next</span>
+            <h5 class="__title">Whitepaper</h5>
+          </a>
+
+          <a class="read-next" href="./best-practices">
+            <span class="__continue">Read Next</span>
+            <h5 class="__title">Best Practices</h5>
+          </a>
+        </div>
+      </article>
+
+    </main>
+    <!-- footer -->
+    <footer class="footer" id="footer">
+      <div class="footer-wrapper">
+        <div class="footer-brand">
+          <h2 class="__title">the <span class="darker-span">Sage</span> Protocol</h2>
+        </div>
+        <div class="footer-nav">
+          <div class="footer-nav-column">
+            <h4>Learn</h4>
+            <ul>
+              <li><a href="./">Home</a></li>
+              <li><a href="./learn">Learn</a></li>
+              <li><a href="./best-practices">Best Practices</a></li>
+              <li><a href="./faq">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav-column">
+            <h4>Protocol</h4>
+            <ul>
+              <li><a href="./paper">Whitepaper</a></li>
+              <li><a href="./code">Code</a></li>
+              <li><a href="https://github.com/dorkodu/sage">GitHub</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <p class="statement">&copy; 2021 Dorkodu</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./prism.js"></script>
+    <!--
+      <script>
+        hljs.highlightAll();
+      </script>
+    -->
+</body>
+
+</html>
