@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, max-scale=1">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="theme-color" content="#57db57">
+  <meta name="author" content="Doruk Eray">
+
+  <link rel="icon" href="/images/sage-book.svg">
+
+  <link rel="stylesheet" href="/assets.min.css">
+  <link rel="stylesheet" href="/assets/components.min.css">
+
+  <!-- Primary Meta Tags -->
+  <title>Best Practices — Sage</title>
+  <meta name="title" content="Best Practices - Sage">
+  <meta name="keywords" content="sage best practices, sage best practice, sage best ways, sage tips, sage hints">
+  <meta name="description" content="Tips & tricks about Sage.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://libre.dorkodu.com/sage/best-practices">
+  <meta property="og:title" content="Best Practices - Sage">
+  <meta property="og:description" content="Tips & tricks about Sage.">
+
+  <!-- Twitter -->
+
+  <meta property="twitter:card" content="summary">
+  <meta property="twitter:url" content="https://libre.dorkodu.com/sage/best-practices">
+  <meta property="twitter:title" content="Best Practices - Sage">
+  <meta property="twitter:description" content="Tips & tricks about Sage.">
+
+  <style>
+    .link-list.--faq>li {
+      margin: .2rem !important;
+    }
+
+    .link-list.--faq>li>a {
+      color: var(--smokegray-d3);
+      font-size: 1.1rem;
+    }
+
+    .link-list.--faq>li>a:hover {
+      color: var(--smokegray-d5);
+    }
+
+    .link-list.--faq>h3,
+    .link-list.--faq>h4,
+    .link-list.--faq>h5 {
+      text-align: left;
+    }
+
+    .faq-answers {
+      list-style: none;
+      margin: 0;
+    }
+
+    .faq-answers>li {
+      background-color: #f5f8f9;
+      border: .25rem solid #eff4f5;
+      padding: .75rem 1rem 1rem;
+      border-radius: 1rem;
+      margin: 1rem .5rem !important;
+    }
+
+    .faq-answers>li>h4 {
+      font-size: 1.3rem !important;
+      line-height: 1.4rem !important;
+      font-weight: 900;
+      padding: 0 !important;
+      margin: .6rem 0 !important;
+      text-align: left !important;
+    }
+
+    .faq-answers>li>p {
+      font-size: 1rem !important;
+      line-height: 1.4rem !important;
+      padding: .5rem 0 !important;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div id="page-wrapper">
+    <!-- header -->
+    <header id="header" class="header">
+      <div class="header-division">
+        <div class="logo">
+          <img src="/images/sage-dark.png" alt="Sage Logo">
+        </div>
+        <div class="nav-container">
+          <nav class="nav" id="nav">
+            <ul>
+              <li><a href="./" rel="dofollow">Home</a></li>
+              <li><a href="./learn" rel="dofollow">Learn</a></li>
+              <li><a href="./paper" rel="dofollow">Paper</a></li>
+              <li><a href="./code" rel="dofollow">Code</a></li>
+              <li><a href="./faq" rel="dofollow">FAQ</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="set">
+
+      <div class="intro-section" style="padding: 0;">
+
+        <div class="intro-section__contents">
+          <h2 class="intro-section__title">Best Practices</h2>
+          <h1 class="intro-section__tagline">Tips & Tricks about Sage.</h1>
+          <p class="intro-section__statement">
+            Read about how to implement commonly features and patterns in your Sage server. Sage is quite
+            new, so best practices are still developing.
+          </p>
+        </div>
+        <div class="image-set --undraw" style="margin-left: 1rem;">
+          <img src="/images/undraw_Specs_djh3.svg">
+        </div>
+      </div>
+
+      <article>
+        <p>
+          Sage's specification is intentionally agnostic on a handful of important topics facing APIs such as dealing
+          with the network, authorization, and pagination; because they're outside of the description about what
+          Sage is and instead just common practice.
+        </p>
+        <p>
+          The recommendations on this page should not be taken as "sacred words", and in some cases may rightfully
+          be ignored in favor of some other approach.
+          <br><br>
+          Some sections introduce some of the philosophy we are developing within Dorkodu around designing and deploying
+          services with Sage, while others are more tactical suggestions for solving common problems.
+        </p>
+
+        <blockquote class="quote">
+          <h3>Work In Progress</h3>
+          <p>
+            Sage is new and the work is still in progress.
+            We are working on <a href="./code">implementations</a> right now and will test our approach in real world
+            before publishing some ideas and assumptions as "best practices".
+          </p>
+        </blockquote>
+
+      </article>
+
+    </main>
+    <!-- footer -->
+    <footer class="footer" id="footer">
+      <div class="footer-wrapper">
+        <div class="footer-brand">
+          <h2 class="__title">the <span class="darker-span">Sage</span> Protocol</h2>
+        </div>
+        <div class="footer-nav">
+          <div class="footer-nav-column">
+            <h4>Learn</h4>
+            <ul>
+              <li><a href="./">Home</a></li>
+              <li><a href="./learn">Learn</a></li>
+              <li><a href="./best-practices">Best Practices</a></li>
+              <li><a href="./faq">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav-column">
+            <h4>Protocol</h4>
+            <ul>
+              <li><a href="./paper">Whitepaper</a></li>
+              <li><a href="./code">Code</a></li>
+              <li><a href="https://github.com/dorkodu/sage">GitHub</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <p class="statement">&copy; 2021 Dorkodu</p>
+        </div>
+      </div>
+    </footer>
+</body>
+
+</html>
