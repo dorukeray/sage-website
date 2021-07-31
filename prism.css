@@ -8,11 +8,15 @@
  * @author Lea Verou
  */
 
+ code, pre {
+  font-family: mononoki, Consolas, Monaco, 'Andale Mono', Roboto Mono, 'Ubuntu Mono', monospace !important; 
+ }
+
 code[class*="language-"],
 pre[class*="language-"] {
   color: #111520;
   background: none;
-  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  font-family: mononoki, Consolas, Monaco, 'Andale Mono', Roboto Mono, 'Ubuntu Mono', monospace !important;
   font-size: 0.85rem;
   text-align: left;
   white-space: pre;

@@ -24,6 +24,7 @@ body {
 
 div {
   overflow: hidden;
+  font-family: var(--font-family), sans-serif;
 }
 
 p {
@@ -58,7 +59,7 @@ code {
   padding: .25rem;
 }
 
-li code, 
+li code,
 p code {
   font-size: 1rem;
   color: var(--smokegray-d5);
@@ -68,10 +69,12 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
   color: var(--text-color);
   letter-spacing: -.03rem;
   text-rendering: optimizelegibility;
+  font-family: var(--font-family);
 }
 
 @supports (font-stretch: 100%) {
@@ -80,12 +83,16 @@ h5 {
   h2,
   h3,
   h4,
-  h5 {
+  h5,
+  h6 {
     font-stretch: 40% !important;
   }
 }
 
-h1,
+h1 {
+  font-weight: 900;
+}
+
 h2 {
   font-weight: 800;
 }
